@@ -1,0 +1,14 @@
+[
+    {
+        "png":  "website/.reskin/generated/brand/logo.png",
+        "width":  800,
+        "height":  800,
+        "svg":  "website/.reskin/generated/brand/logo.svg"
+    },
+    {
+        "png":  "website/.reskin/generated/brand/logo-lockup.png",
+        "width":  1200,
+        "height":  400,
+        "svg":  "website/.reskin/generated/brand/logo-lockup.svg"
+    }
+]

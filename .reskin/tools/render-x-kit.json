@@ -1,0 +1,38 @@
+[
+    {
+        "png":  "twitter/banner.png",
+        "width":  1500,
+        "height":  500,
+        "svg":  "twitter/banner.svg"
+    },
+    {
+        "png":  "twitter/burn-to-nft-graphic.png",
+        "width":  1600,
+        "height":  900,
+        "svg":  "twitter/burn-to-nft-graphic.svg"
+    },
+    {
+        "png":  "twitter/first-tweet-graphic.png",
+        "width":  1600,
+        "height":  900,
+        "svg":  "twitter/first-tweet-graphic.svg"
+    },
+    {
+        "png":  "twitter/physical-to-nft-graphic.png",
+        "width":  1600,
+        "height":  900,
+        "svg":  "twitter/physical-to-nft-graphic.svg"
+    },
+    {
+        "png":  "twitter/staking-fee-graphic.png",
+        "width":  1600,
+        "height":  900,
+        "svg":  "twitter/staking-fee-graphic.svg"
+    },
+    {
+        "png":  "twitter/tokenomics-graphic.png",
+        "width":  1600,
+        "height":  900,
+        "svg":  "twitter/tokenomics-graphic.svg"
+    }
+]

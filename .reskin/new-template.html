@@ -1,0 +1,601 @@
+<template>
+  <div class="cx-app">
+    <div class="cx-page">
+      <aside class="cx-rail">
+        <div class="cx-rail-inner">
+          <div class="cx-brand-row">
+            <a class="cx-brand" href="#top" :aria-label="`Custoria.xyz ${t('首页')}`" @click.prevent="scrollToSection('top')">
+              <img class="cx-brand-mark" src="/brand/logo.svg" alt="" />
+              <span class="cx-brand-text">
+                <span class="cx-wordmark">custoria<span class="cx-wordmark-zone">.xyz</span></span>
+                <span class="cx-motto">COLLECT WITH CONTEXT.</span>
+              </span>
+            </a>
+            <button class="cx-menu-btn" :aria-expanded="mobileMenuOpen" :aria-label="mobileMenuOpen ? t('关闭菜单') : t('打开菜单')" type="button" @click="mobileMenuOpen = !mobileMenuOpen">
+              <X v-if="mobileMenuOpen" :size="18" />
+              <Menu v-else :size="18" />
+            </button>
+          </div>
+
+          <p class="cx-status">
+            <span class="cx-status-top"><span class="cx-status-dot" aria-hidden="true"></span>{{ t('产品预览 · Market prototype') }}</span>
+            <span class="cx-status-line">
+              <span>{{ t('暂未连接钱包或智能合约') }}</span>
+              <a class="cx-status-jump" href="#protocol" @click.prevent="scrollToSection('protocol')">{{ t('了解交易流程') }} <ArrowUpRight :size="12" /></a>
+            </span>
+          </p>
+
+          <button class="cx-rail-cta" type="button" @click="scrollToSection('market')">{{ t('逛逛藏品') }} <ArrowRight :size="16" /></button>
+
+          <nav class="cx-index" :aria-label="t('主要导航')">
+            <a class="cx-index-item" href="#market" @click.prevent="scrollToSection('market')"><span class="cx-index-no" aria-hidden="true">01</span><span class="cx-index-label">{{ t('藏品市集') }}</span></a>
+            <a class="cx-index-item" href="#protocol" @click.prevent="scrollToSection('protocol')"><span class="cx-index-no" aria-hidden="true">02</span><span class="cx-index-label">{{ t('交易保障') }}</span></a>
+            <a class="cx-index-item" href="#rewards" @click.prevent="scrollToSection('rewards')"><span class="cx-index-no" aria-hidden="true">03</span><span class="cx-index-label">{{ t('质押与奖励') }}</span></a>
+            <a class="cx-index-item" href="#roadmap" @click.prevent="scrollToSection('roadmap')"><span class="cx-index-no" aria-hidden="true">04</span><span class="cx-index-label">{{ t('路线图') }}</span></a>
+          </nav>
+
+          <div class="cx-mint" aria-label="Prototype mint address">
+            <div>
+              <span class="cx-mint-key">PROTOTYPE MINT <span>SOLANA</span></span>
+              <code class="cx-mint-value">{{ tokenAddress }}</code>
+            </div>
+            <button class="cx-mint-copy" type="button" aria-label="Copy prototype mint address" title="Copy prototype mint address" @click="copyTokenAddress">
+              <Copy :size="13" />
+              <span>COPY</span>
+            </button>
+          </div>
+
+          <div class="cx-rail-foot">
+            <div class="cx-rail-actions">
+              <button class="cx-locale" type="button" :aria-label="locale === 'en' ? 'Switch to Chinese' : '切换到英文'" @click="toggleLocale">{{ locale === 'en' ? '中' : 'EN' }}</button>
+              <button class="cx-btn" type="button" @click="showSellerPanel = true">{{ t('成为卖家') }} <Plus :size="13" /></button>
+              <button class="cx-btn cx-btn-primary" type="button" @click="showWalletPanel = true"><WalletCards :size="15" />{{ t('连接钱包') }}</button>
+            </div>
+            <a class="cx-xlink" href="https://x.com/Custoria" target="_blank" rel="noreferrer" aria-label="Follow Custoria on X">
+              <X :size="14" stroke-width="2.5" />
+              <span>FOLLOW @CUSTORIA ON X</span>
+              <ExternalLink :size="10" />
+            </a>
+            <ul class="cx-trust">
+              <li><span class="cx-led cx-led-a" aria-hidden="true"></span>{{ t('实物先行') }}</li>
+              <li><span class="cx-led cx-led-b" aria-hidden="true"></span>{{ t('交易有据') }}</li>
+              <li><span class="cx-led cx-led-c" aria-hidden="true"></span>{{ t('社区共建') }}</li>
+            </ul>
+          </div>
+
+          <nav v-if="mobileMenuOpen" class="cx-menu" :aria-label="t('移动导航')">
+            <a href="#market" @click.prevent="scrollToSection('market')">{{ t('藏品市集') }} <ArrowRight :size="14" /></a>
+            <a href="#protocol" @click.prevent="scrollToSection('protocol')">{{ t('交易保障') }} <ArrowRight :size="14" /></a>
+            <a href="#rewards" @click.prevent="scrollToSection('rewards')">{{ t('质押与奖励') }} <ArrowRight :size="14" /></a>
+            <a href="#roadmap" @click.prevent="scrollToSection('roadmap')">{{ t('路线图') }} <ArrowRight :size="14" /></a>
+            <button type="button" @click="showWalletPanel = true; mobileMenuOpen = false"><WalletCards :size="15" /> {{ t('连接钱包') }}</button>
+          </nav>
+        </div>
+      </aside>
+
+      <main id="top" class="cx-stage">
+        <section class="cx-hero">
+          <div class="cx-eyebrow">{{ t('收藏的下一站 · ON SOLANA') }}</div>
+          <div class="cx-hero-top">
+            <h1 class="cx-hero-title">{{ t('让每件藏品，') }}<br /><span class="cx-accent">{{ t('都有迹可循。') }}</span></h1>
+            <div class="cx-hero-actions">
+              <button class="cx-link-btn" type="button" @click="scrollToSection('protocol')">{{ t('交易如何运作') }} <ArrowUpRight :size="14" /></button>
+            </div>
+          </div>
+          <p class="cx-hero-lede">{{ t('潮玩二手市集，为实物藏品记录来历、交易与流转。认真收藏，也认真留证。') }}</p>
+
+          <article class="cx-feature">
+            <div class="cx-feature-media">
+              <img class="cx-feature-img" src="/images/collectibles/dragon.jpg" :alt="t('青蓝色龙纹的收藏级设计师公仔')" />
+              <div class="cx-feature-chips">
+                <span class="cx-chip"><span class="cx-status-dot" aria-hidden="true"></span>PHOTO REF / 001</span>
+                <span class="cx-chip">ITEM PHOTO</span>
+              </div>
+              <span class="cx-feature-tag"><BadgeCheck :size="13" /> {{ t('参考藏品 · 演示照片') }}</span>
+            </div>
+            <div class="cx-feature-body">
+              <span class="cx-kicker">THE COLLECTOR'S EDIT · 001</span>
+              <span class="cx-kicker"><Box :size="12" /> DESIGNER VINYL</span>
+              <h2 class="cx-feature-title">{{ locale === 'en' ? 'Blue Dragon' : '蓝龙' }}<br /><span>Dunny</span></h2>
+              <p class="cx-feature-note">{{ t('一件实物，销毁后留下永久链上凭证。') }}</p>
+              <dl class="cx-specs">
+                <div class="cx-spec"><dt>{{ t('商品凭证') }}</dt><dd>ITEM NFT <small>{{ t('审核后铸造') }}</small></dd></div>
+                <div class="cx-spec"><dt>{{ t('示例报价') }}</dt><dd>2,480 <em>TRF</em></dd></div>
+              </dl>
+              <p class="cx-spec-note"><ShieldCheck :size="12" /><span>{{ t('售出后销毁实物，管理员审核后生成 NFT 并永久上链') }}</span></p>
+            </div>
+          </article>
+        </section>
+
+        <section class="cx-band" :aria-label="t('平台特征')">
+          <div class="cx-band-row">
+            <span class="cx-band-no" aria-hidden="true">01</span>
+            <span class="cx-band-key">{{ t('从实物出发') }}</span>
+            <span class="cx-band-text">{{ t('照片、购买凭证与鉴定信息共同构成商品档案') }}</span>
+          </div>
+          <div class="cx-band-row">
+            <span class="cx-band-no" aria-hidden="true">02</span>
+            <span class="cx-band-key">{{ t('状态清晰可见') }}</span>
+            <span class="cx-band-text">{{ t('订单托管、销毁视频与审核步骤逐项记录') }}</span>
+          </div>
+          <div class="cx-band-row">
+            <span class="cx-band-no" aria-hidden="true">03</span>
+            <span class="cx-band-key">{{ t('凭证陪伴交易') }}</span>
+            <span class="cx-band-text">{{ t('商品凭证与交易证明对应实物与交易历史') }}</span>
+          </div>
+        </section>
+
+        <section id="market" class="cx-section">
+          <div class="cx-section-head">
+            <div class="cx-section-copy">
+              <div class="cx-eyebrow">THE COLLECTOR'S MARKET</div>
+              <h2 class="cx-h2">{{ t('现在，') }}<span class="cx-accent">{{ t('值得收藏。') }}</span></h2>
+              <p class="cx-sub">{{ t('为探索体验准备的示例藏品 · 所有商品与价格均为演示数据') }}</p>
+            </div>
+            <button class="cx-note-btn" type="button" @click="notify(t('藏品图片摄影与许可信息已列在每件商品详情中'))"><Image :size="14" /> {{ t('演示藏品照片均有来源') }}</button>
+          </div>
+
+          <div class="cx-filters" role="tablist" :aria-label="t('商品类别')">
+            <button v-for="category in categories" :key="category" class="cx-filter" :class="{ 'cx-filter-on': selectedCategory === category }" type="button" role="tab" :aria-selected="selectedCategory === category" @click="selectedCategory = category">
+              {{ t(category) }}<span v-if="category === '我的收藏'" class="cx-filter-count">{{ favorites.size }}</span>
+            </button>
+          </div>
+
+          <div class="cx-toolbar">
+            <label class="cx-search">
+              <Search :size="16" />
+              <input ref="searchInput" v-model="query" type="search" :aria-label="t('搜索藏品')" :placeholder="t('搜索藏品或系列')" />
+              <kbd class="cx-kbd">Ctrl K</kbd>
+            </label>
+            <label class="cx-sort">
+              <ArrowDownUp :size="14" />
+              <select v-model="sortOrder" :aria-label="t('排序方式')">
+                <option value="recommended">{{ t('推荐排序') }}</option>
+                <option value="low">{{ t('价格由低到高') }}</option>
+                <option value="high">{{ t('价格由高到低') }}</option>
+              </select>
+              <ChevronDown :size="13" />
+            </label>
+          </div>
+
+          <ol v-if="visibleListings.length" class="cx-list">
+            <li v-for="(item, index) in visibleListings" :key="item.id" class="cx-lot" :style="{ '--cx-row': index }">
+              <span class="cx-lot-no" aria-hidden="true">{{ item.id }}</span>
+              <div class="cx-lot-thumb">
+                <button class="cx-lot-open" type="button" :aria-label="t('查看 {name} 详情', { name: listingText(item, 'name') })" @click="openListing(item)">
+                  <img :src="item.image" :alt="listingText(item, 'imageAlt')" loading="lazy" />
+                  <span class="cx-lot-code">TRF / {{ item.id }}</span>
+                </button>
+                <button class="cx-heart" :class="{ 'cx-heart-on': favorites.has(item.id) }" type="button" :aria-label="favorites.has(item.id) ? t('移出收藏') : t('加入收藏')" :aria-pressed="favorites.has(item.id)" @click="toggleFavorite(item.id)"><Heart :size="16" :fill="favorites.has(item.id) ? 'currentColor' : 'none'" /></button>
+                <span class="cx-demo">{{ t('预览') }}</span>
+              </div>
+              <button class="cx-lot-main" type="button" @click="openListing(item)">
+                <span class="cx-lot-series">{{ listingText(item, 'subtitle') }}</span>
+                <span class="cx-lot-name"><h3>{{ listingText(item, 'name') }}</h3><ArrowUpRight :size="15" /></span>
+              </button>
+              <div class="cx-lot-meta">
+                <span v-if="item.verified" class="cx-badge"><BadgeCheck :size="11" />{{ t('凭证资料已登记') }}</span>
+                <span><span class="cx-state-dot" aria-hidden="true"></span>{{ listingText(item, 'condition') }}</span>
+                <span>{{ listingText(item, 'edition') }}</span>
+              </div>
+              <div class="cx-lot-price"><strong>{{ item.price.toLocaleString('en-US') }}</strong><span>TRF</span><small class="cx-lot-note">{{ t('参考示例') }}</small></div>
+            </li>
+          </ol>
+
+          <div v-else class="cx-empty">
+            <span class="cx-empty-mark" aria-hidden="true"><Search :size="18" /></span>
+            <h3>{{ t(selectedCategory === '我的收藏' ? '还没有收藏藏品' : '没有找到相关藏品') }}</h3>
+            <p>{{ t(selectedCategory === '我的收藏' ? '点击藏品图片上的心形图标，即可加入本地收藏。' : '试试另一个关键词，或切换到全部藏品。') }}</p>
+            <button type="button" @click="selectedCategory = '全部藏品'; query = ''">{{ t('查看全部藏品') }} <ArrowRight :size="14" /></button>
+          </div>
+
+          <div class="cx-footnote"><Info :size="13" /> {{ t('目前展示的商品名称、成色描述、TRF 报价与凭证标记均为网页演示内容，不代表真实库存、卖家或链上商品记录。') }}</div>
+        </section>
+
+        <section id="protocol" class="cx-section cx-proof">
+          <div class="cx-section-head">
+            <div class="cx-section-copy">
+              <div class="cx-eyebrow">BUILT AROUND REAL TRADES</div>
+              <h2 class="cx-h2">{{ t('实物在前，') }}<span class="cx-accent">{{ t('凭证随行。') }}</span></h2>
+              <p class="cx-sub">{{ t('从售出、视频销毁到管理员审核和铸造，状态都能被看懂。') }}</p>
+            </div>
+            <span class="cx-pill">{{ t('白皮书流程 · 设计草案') }}</span>
+          </div>
+
+          <ol class="cx-proof-track">
+            <li class="cx-step">
+              <span class="cx-step-no">01 / ITEM</span>
+              <span class="cx-step-icon cx-icon-a"><Box :size="18" /></span>
+              <div class="cx-step-body">
+                <h3>{{ t('建好商品档案') }}</h3>
+                <p>{{ t('卖家提交照片、购买凭证与序列信息，通过平台或合作鉴定方审核后才能进入市集。') }}</p>
+                <ul class="cx-step-tags"><li>{{ t('商品系列') }}</li><li>{{ t('鉴定与成色') }}</li><li>{{ t('购买凭证哈希') }}</li></ul>
+              </div>
+            </li>
+            <li class="cx-step">
+              <span class="cx-step-no">02 / BURN</span>
+              <span class="cx-step-icon cx-icon-b"><Video :size="18" /></span>
+              <div class="cx-step-body">
+                <h3>{{ t('售出后拍摄销毁视频') }}</h3>
+                <p>{{ t('交易完成后，卖家必须拍摄完整销毁过程并提交视频；实物销毁不可逆，视频哈希写入待审核档案。') }}</p>
+                <ul class="cx-step-tags"><li>{{ t('销毁视频') }}</li><li>{{ t('视频哈希与时间戳') }}</li><li>{{ t('不可逆实物状态') }}</li></ul>
+              </div>
+            </li>
+            <li class="cx-step">
+              <span class="cx-step-no">03 / MINT</span>
+              <span class="cx-step-icon cx-icon-c"><ShieldCheck :size="18" /></span>
+              <div class="cx-step-body">
+                <h3>{{ t('管理员审核后铸造 NFT') }}</h3>
+                <p>{{ t('系统管理员核验销毁视频与订单后，才生成 Item NFT；争议期结束后生成 Trade Proof NFT，凭证在链上永久保存。') }}</p>
+                <ul class="cx-step-tags"><li>{{ t('系统管理员审核') }}</li><li>{{ t('审核通过后铸造') }}</li><li>{{ t('链上永久记录') }}</li></ul>
+              </div>
+            </li>
+          </ol>
+
+          <div class="cx-ticket">
+            <div class="cx-ticket-top">
+              <span class="cx-ticket-key"><span class="cx-ticket-led" aria-hidden="true"></span>ITEM PASSPORT</span>
+              <span class="cx-ticket-state">{{ t('设计示意') }}</span>
+            </div>
+            <div class="cx-ticket-main">
+              <div class="cx-ticket-media">
+                <img src="/images/collectibles/dragon.jpg" :alt="t('蓝龙 Dunny 商品凭证中的实物照片示意')" loading="lazy" />
+                <span class="cx-ticket-caption">{{ t('实物照片示意') }}</span>
+              </div>
+              <div class="cx-ticket-body">
+                <div class="cx-ticket-title">
+                  <div>
+                    <span class="cx-ticket-code">COLLECTIBLE / 001</span>
+                    <h3>{{ locale === 'en' ? 'Blue Dragon Dunny' : '蓝龙 Dunny' }}</h3>
+                  </div>
+                  <span class="cx-ticket-stamp" aria-hidden="true"><BadgeCheck :size="16" /></span>
+                </div>
+                <dl class="cx-ticket-specs">
+                  <div><dt>{{ t('商品类型') }}</dt><dd>{{ locale === 'en' ? 'Designer vinyl' : '设计师搪胶' }}</dd></div>
+                  <div><dt>{{ t('链上凭证') }}</dt><dd><span class="cx-ticket-dot" aria-hidden="true"></span>Item NFT <span class="cx-muted-tag">{{ t('审核后铸造') }}</span></dd></div>
+                  <div><dt>{{ t('权利范围') }}</dt><dd>{{ t('商品记录与交易历史') }}</dd></div>
+                  <div><dt>{{ t('链下数据') }}</dt><dd>{{ t('销毁视频哈希') }}</dd></div>
+                </dl>
+                <p class="cx-ticket-note">{{ t('商品凭证不代表品牌方背书，亦不会转移商标、版权或角色形象权利。') }}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cx-chain">
+            <div class="cx-chain-step"><span class="cx-chain-dot" aria-hidden="true"></span><span>{{ t('买家付款') }}</span></div>
+            <ArrowRight :size="13" class="cx-chain-arrow" />
+            <div class="cx-chain-step"><span class="cx-chain-dot" aria-hidden="true"></span><span>{{ t('订单托管') }}</span></div>
+            <ArrowRight :size="13" class="cx-chain-arrow" />
+            <div class="cx-chain-step"><span class="cx-chain-dot" aria-hidden="true"></span><span>{{ t('确认售出') }}</span></div>
+            <ArrowRight :size="13" class="cx-chain-arrow" />
+            <div class="cx-chain-step"><span class="cx-chain-dot" aria-hidden="true"></span><span>{{ t('卖家拍摄销毁视频') }}</span></div>
+            <ArrowRight :size="13" class="cx-chain-arrow" />
+            <div class="cx-chain-step"><span class="cx-chain-dot" aria-hidden="true"></span><span>{{ t('系统管理员审核') }}</span></div>
+            <ArrowRight :size="13" class="cx-chain-arrow" />
+            <div class="cx-chain-step cx-chain-done"><span class="cx-chain-dot" aria-hidden="true"></span><span>{{ t('铸造 NFT & 永久上链') }}</span></div>
+          </div>
+        </section>
+
+        <section id="rewards" class="cx-section">
+          <div class="cx-section-head">
+            <div class="cx-section-copy">
+              <div class="cx-eyebrow">REWARDS FROM REAL ACTIVITY</div>
+              <h2 class="cx-h2">{{ t('奖励来自参与，') }}<span class="cx-accent">{{ t('不来自承诺。') }}</span></h2>
+              <p class="cx-sub">{{ t('依照白皮书建议参数制作的交互式质押权重试算，不展示或预测收益。') }}</p>
+            </div>
+            <span class="cx-pill">{{ t('白皮书草案参数') }}</span>
+          </div>
+
+          <div class="cx-rewards-grid">
+            <div class="cx-sandbox">
+              <div class="cx-sandbox-head">
+                <span class="cx-sandbox-title"><span class="cx-sandbox-icon"><Coins :size="16" /></span>{{ t('质押权重试算') }}</span>
+                <span class="cx-local">{{ t('本地交互') }}</span>
+              </div>
+              <label class="cx-field-label" for="stake-amount">{{ t('假设锁仓数量') }} <span>TRF</span></label>
+              <div class="cx-amount">
+                <input id="stake-amount" v-model.number="rewardAmount" type="number" min="0" max="100000000" inputmode="decimal" />
+                <span>TRF</span>
+                <button type="button" @click="rewardAmount = 2500">{{ t('重置') }}</button>
+              </div>
+              <div class="cx-range">
+                <input v-model.number="rewardAmount" type="range" min="0" max="50000" step="100" :aria-label="t('选择 TRF 锁仓数量')" />
+                <div class="cx-range-ends"><span>0 TRF</span><span>50,000 TRF</span></div>
+              </div>
+
+              <div class="cx-field-label">{{ t('锁仓周期') }} <span>{{ t('时间系数') }}</span></div>
+              <div class="cx-segment" :aria-label="t('锁仓周期')">
+                <button v-for="lock in [{ days: 30, factor: '1.00×' }, { days: 90, factor: '1.25×' }, { days: 180, factor: '1.60×' }]" :key="lock.days" class="cx-segment-btn" :class="{ 'cx-segment-on': rewardLock === lock.days }" type="button" @click="rewardLock = lock.days"><span>{{ lock.days }} {{ locale === 'en' ? 'days' : '天' }}</span><small>{{ lock.factor }}</small></button>
+              </div>
+
+              <div class="cx-field-label">{{ t('会员凭证') }} <span>{{ t('草案加成') }}</span></div>
+              <div class="cx-select">
+                <Ticket :size="15" />
+                <select v-model="memberPass" :aria-label="t('选择会员凭证')">
+                  <option value="none">{{ t('无会员凭证') }}</option>
+                  <option value="collector">Collector Pass</option>
+                  <option value="genesis">Genesis Pass</option>
+                </select>
+                <ChevronDown :size="13" />
+              </div>
+
+              <div class="cx-weight"><div><span>{{ t('示例权重') }}</span><small>{{ t('仅按锁仓数量与草案系数试算') }}</small></div><strong>{{ exampleWeight.toLocaleString('en-US') }}<span>w</span></strong></div>
+            </div>
+
+            <div class="cx-signal">
+              <div class="cx-orb">
+                <span class="cx-orb-ring" aria-hidden="true"></span>
+                <span class="cx-orb-core"><img src="/brand/logo.svg" alt="Custoria proof mark" /></span>
+              </div>
+              <div class="cx-nodes">
+                <div class="cx-node"><TrendingUp :size="15" /><span v-html="t('已实现\n交易手续费').replace(/\n/g, '<br />')"></span></div>
+                <div class="cx-node"><Landmark :size="15" /><span v-html="t('公开批准\n社区预算').replace(/\n/g, '<br />')"></span></div>
+                <div class="cx-node"><Coins :size="15" /><span v-html="t('质押者\n按权重分享').replace(/\n/g, '<br />')"></span></div>
+              </div>
+              <span class="cx-source-caption">ONLY REALIZED FUNDS</span>
+            </div>
+          </div>
+
+          <div class="cx-explainer">
+            <span class="cx-tiny">{{ t('奖励分配思路') }}</span>
+            <p>{{ t('每个周期的奖励上限取决于已实现的可分配收入与经治理批准的预算。白皮书提出按锁仓数量、锁仓时间、会员凭证与持有时间计算权重。') }}</p>
+            <div class="cx-formula"><code>{{ t('当期奖励池 × 个人权重 ÷ 全部有效权重') }}</code><ArrowUpRight :size="13" /></div>
+          </div>
+
+          <div class="cx-disclosure">
+            <ShieldCheck :size="15" />
+            <p>{{ t('草案参数可能调整；当前未部署质押、奖励池或会员 NFT 合约。奖励来自真实收入或事先公开的代币预算，不承诺固定 APY、收益、回购或代币价格。') }}</p>
+            <button type="button" :aria-label="t('查看奖励规则说明')" @click="notify(t('质押与奖励采用动态参数，详见 WHITEPAPER.md 第 5 节'))"><Info :size="16" /></button>
+          </div>
+        </section>
+
+        <section id="tokenomics" class="cx-section">
+          <div class="cx-section-head">
+            <div class="cx-section-copy">
+              <div class="cx-eyebrow">TRF · PROPOSED TOKEN MODEL</div>
+              <h2 class="cx-h2">{{ t('机制先写清楚，') }}<br /><span class="cx-accent">{{ t('再逐步验证。') }}</span></h2>
+              <p class="cx-sub">{{ t('白皮书初始模型用于讨论与测试，代币供给、分配和释放尚非已部署事实。') }}</p>
+              <button class="cx-link-btn" type="button" @click="notify(t('代币初始分配与解锁计划均为白皮书建议模型'))">{{ t('查看模型说明') }} <ArrowUpRight :size="14" /></button>
+            </div>
+          </div>
+
+          <div class="cx-supply-head">
+            <div>
+              <span class="cx-supply-key">{{ t('建议初始总量') }}</span>
+              <strong class="cx-supply-total">1,000,000,000 <span>TRF</span></strong>
+              <span class="cx-supply-note">{{ t('提案参数 · 尚未发行') }}</span>
+            </div>
+            <span class="cx-pill">TRF</span>
+          </div>
+
+          <table class="cx-alloc">
+            <tbody>
+              <tr class="cx-alloc-row"><th scope="row"><span class="cx-swatch cx-swatch-1" aria-hidden="true"></span>{{ t('社区、质押与交易奖励') }}</th><td><span class="cx-bar" style="--pct: 30%" aria-hidden="true"></span>30%</td></tr>
+              <tr class="cx-alloc-row"><th scope="row"><span class="cx-swatch cx-swatch-2" aria-hidden="true"></span>{{ t('金库与商品采购') }}</th><td><span class="cx-bar" style="--pct: 20%" aria-hidden="true"></span>20%</td></tr>
+              <tr class="cx-alloc-row"><th scope="row"><span class="cx-swatch cx-swatch-3" aria-hidden="true"></span>{{ t('流动性与做市') }}</th><td><span class="cx-bar" style="--pct: 15%" aria-hidden="true"></span>15%</td></tr>
+              <tr class="cx-alloc-row"><th scope="row"><span class="cx-swatch cx-swatch-4" aria-hidden="true"></span>{{ t('团队与核心贡献者') }}</th><td><span class="cx-bar" style="--pct: 15%" aria-hidden="true"></span>15%</td></tr>
+              <tr class="cx-alloc-row"><th scope="row"><span class="cx-swatch cx-swatch-5" aria-hidden="true"></span>{{ t('生态与合作伙伴') }}</th><td><span class="cx-bar" style="--pct: 10%" aria-hidden="true"></span>10%</td></tr>
+              <tr class="cx-alloc-row"><th scope="row"><span class="cx-swatch cx-swatch-6" aria-hidden="true"></span>{{ t('投资者与顾问') }}</th><td><span class="cx-bar" style="--pct: 10%" aria-hidden="true"></span>10%</td></tr>
+            </tbody>
+          </table>
+
+          <div class="cx-alloc-foot">
+            <span><LockKeyhole :size="13" />{{ t('团队代币：建议 12 个月 cliff + 36 个月线性释放') }}</span>
+            <span>{{ t('多签与时间锁管理 · 草案建议') }}</span>
+          </div>
+        </section>
+
+        <section id="roadmap" class="cx-section">
+          <div class="cx-section-head">
+            <div class="cx-section-copy">
+              <div class="cx-eyebrow">FROM CONCEPT TO COMMUNITY</div>
+              <h2 class="cx-h2">{{ t('每一步，都经得起') }}<span class="cx-accent">{{ t('检验。') }}</span></h2>
+              <p class="cx-sub">{{ t('路线图阶段是拟议方向；当前网站是产品交互预览。') }}</p>
+            </div>
+            <span class="cx-pill">DRAFT ROADMAP</span>
+          </div>
+
+          <ol class="cx-phases">
+            <li class="cx-phase cx-phase-now">
+              <span class="cx-phase-no">PHASE 00</span>
+              <div class="cx-phase-body">
+                <span class="cx-phase-state">{{ t('当前规划') }}</span>
+                <h3>{{ t('机制设计与测试网') }}</h3>
+                <p>{{ t('完善数据模型、代币经济模拟和合约规格；发布测试网前端并开展内部安全测试。') }}</p>
+                <span class="cx-phase-tail">{{ t('产品与审计准备') }}</span>
+              </div>
+            </li>
+            <li class="cx-phase">
+              <span class="cx-phase-no">PHASE 01</span>
+              <div class="cx-phase-body">
+                <span class="cx-phase-state">{{ t('规划中') }}</span>
+                <h3>{{ t('Genesis 与凭证 NFT') }}</h3>
+                <p>{{ t('测试 Genesis Pass、交易证明与社区任务，并验证质押和随机数机制。') }}</p>
+                <span class="cx-phase-tail">{{ t('参与机制验证') }}</span>
+              </div>
+            </li>
+            <li class="cx-phase">
+              <span class="cx-phase-no">PHASE 02</span>
+              <div class="cx-phase-body">
+                <span class="cx-phase-state">{{ t('规划中') }}</span>
+                <h3>{{ t('市集 Alpha') }}</h3>
+                <p>{{ t('邀请卖家试运行报价、托管、销毁视频提交、管理员审核与凭证铸造。') }}</p>
+                <span class="cx-phase-tail">{{ t('小范围交易测试') }}</span>
+              </div>
+            </li>
+            <li class="cx-phase">
+              <span class="cx-phase-no">PHASE 03–04</span>
+              <div class="cx-phase-body">
+                <span class="cx-phase-state">{{ t('后续阶段') }}</span>
+                <h3>{{ t('奖励季与社区治理') }}</h3>
+                <p>{{ t('按真实交易数据逐步开放奖池、质押奖励预算与社区参数提案。') }}</p>
+                <span class="cx-phase-tail">{{ t('持续披露与共同治理') }}</span>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="cx-cta">
+          <span class="cx-cta-mark"><img src="/brand/logo.svg" alt="" /></span>
+          <div class="cx-cta-copy">
+            <span class="cx-tiny">A MARKET BUILT FOR COLLECTORS</span>
+            <h2>{{ t('藏得认真，') }}<span class="cx-accent">{{ t('就该有迹可循。') }}</span></h2>
+            <p>{{ t('从一件实物开始，让每一次交易都留下清楚的来历。') }}</p>
+          </div>
+          <button class="cx-cta-button" type="button" @click="scrollToSection('market')">{{ t('探索示例市集') }} <ArrowRight :size="16" /></button>
+        </section>
+      </main>
+
+      <footer class="cx-foot">
+        <div>
+          <a class="cx-foot-brand" href="#top" aria-label="Custoria.xyz" @click.prevent="scrollToSection('top')">
+            <img class="cx-foot-mark" src="/brand/logo.svg" alt="" />
+            <span class="cx-brand-text">
+              <span class="cx-wordmark">custoria<span class="cx-wordmark-zone">.xyz</span></span>
+              <span class="cx-motto">COLLECT WITH CONTEXT.</span>
+            </span>
+          </a>
+          <p class="cx-foot-line">{{ t('为实物藏品而设计的 Solana 二手市集。') }}<br /><span>Collect with context.</span></p>
+          <div class="cx-foot-links">
+            <a href="#market" @click.prevent="scrollToSection('market')">{{ t('藏品市集') }}</a>
+            <a href="#protocol" @click.prevent="scrollToSection('protocol')">{{ t('交易保障') }}</a>
+            <a href="#rewards" @click.prevent="scrollToSection('rewards')">{{ t('质押模型') }}</a>
+            <a href="#roadmap" @click.prevent="scrollToSection('roadmap')">{{ t('路线图') }}</a>
+          </div>
+        </div>
+        <div class="cx-foot-aside">
+          <div class="cx-foot-legal"><span>© 2026 Custoria.xyz · Independent collector marketplace</span><span>{{ t('不是任何商品品牌的官方商城或授权销售渠道。') }}</span></div>
+          <div class="cx-foot-disclaimer"><Info :size="12" /><span>{{ t('TRF、NFT 与实体商品的具体关系以正式用户协议和订单规则为准。任何奖励均受真实平台收入与治理预算约束，不构成固定收益或投资回报承诺。') }}</span></div>
+          <div class="cx-foot-credits">
+            <span>{{ t('演示图片来源与许可：') }}</span>
+            <a href="https://commons.wikimedia.org/wiki/File:Dunny_vinyl_figure_which_portrays_a_dragon_embroidered_on_a_silk_brocade_door_valance_and_side_panels_(Chinese,_17th-18th_century)_in_The_MET_collection.jpg" target="_blank" rel="noreferrer">Dunny · CC BY-SA 4.0</a>
+            <a href="https://commons.wikimedia.org/wiki/File:Molly_(art_toy).jpg" target="_blank" rel="noreferrer">Molly · CC0</a>
+            <a href="https://commons.wikimedia.org/wiki/File:HOOTLUM_vinyl_art_figure_(white_edition).jpg" target="_blank" rel="noreferrer">Hootlum · CC BY-SA 4.0</a>
+            <a href="https://commons.wikimedia.org/wiki/File:KanColle_Nendoroid_-_Kirishima.jpg" target="_blank" rel="noreferrer">Nendoroid · CC BY 2.0</a>
+            <a href="https://commons.wikimedia.org/wiki/File:Nendoroid_Collection.jpg" target="_blank" rel="noreferrer">{{ t('收藏组合') }} · CC BY-SA 2.0</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <Transition name="modal-fade">
+      <div v-if="activeListing" class="cx-overlay" @mousedown.self="closeDialogs">
+        <section class="cx-dialog" role="dialog" aria-modal="true" :aria-label="`${listingText(activeListing, 'name')} ${t('详情')}`">
+          <div class="cx-dialog-bar">
+            <span class="cx-dialog-code">DEMO ITEM / {{ activeListing.id }}</span>
+            <button class="cx-dialog-close" type="button" :aria-label="t('关闭')" @click="closeDialogs"><X :size="18" /></button>
+          </div>
+
+          <div class="cx-dialog-grid">
+            <div class="cx-dialog-media">
+              <div class="cx-dialog-frame">
+                <img :src="activeListing.image" :alt="listingText(activeListing, 'imageAlt')" />
+                <span class="cx-dialog-photo-label">{{ t('商品图片 · 演示来源') }}</span>
+              </div>
+              <div class="cx-credit"><Image :size="13" /><span>{{ t('摄影') }} <a :href="activeListing.creditUrl" target="_blank" rel="noreferrer">{{ activeListing.credit }} <ExternalLink :size="10" /></a> · {{ activeListing.license }}</span></div>
+            </div>
+
+            <div class="cx-dialog-body">
+              <template v-if="!showCheckout">
+                <div class="cx-dialog-heading">
+                  <div class="cx-overline"><span class="cx-live-dot" aria-hidden="true"></span>{{ t('原型藏品') }}</div>
+                  <h2>{{ listingText(activeListing, 'name') }}</h2>
+                  <p>{{ listingText(activeListing, 'subtitle') }}</p>
+                </div>
+                <div class="cx-price-block">
+                  <span class="cx-price-key">{{ t('示例报价 · 非实时价格') }}</span>
+                  <strong>{{ activeListing.price.toLocaleString('en-US') }} <small>TRF</small></strong>
+                  <span class="cx-price-fiat">{{ t('市场和法币参考价格尚未接入') }}</span>
+                </div>
+                <div class="cx-tabs" role="tablist">
+                  <button class="cx-tab" :class="{ 'cx-tab-on': dialogTab === 'item' }" type="button" role="tab" :aria-selected="dialogTab === 'item'" @click="dialogTab = 'item'">{{ t('藏品详情') }}</button>
+                  <button class="cx-tab" :class="{ 'cx-tab-on': dialogTab === 'proof' }" type="button" role="tab" :aria-selected="dialogTab === 'proof'" @click="dialogTab = 'proof'">{{ t('凭证记录') }}</button>
+                </div>
+                <div v-if="dialogTab === 'item'" class="cx-pane">
+                  <div class="cx-condition"><span class="cx-state-dot" aria-hidden="true"></span><span>{{ listingText(activeListing, 'condition') }}</span><span class="cx-condition-sep" aria-hidden="true"></span><span>{{ listingText(activeListing, 'edition') }}</span></div>
+                  <dl class="cx-facts">
+                    <div><dt>{{ t('商品系列') }}</dt><dd>{{ listingText(activeListing, 'name') }}</dd></div>
+                    <div><dt>{{ t('资料审核') }}</dt><dd>{{ activeListing.verified ? t('概念演示状态') : t('尚无审核记录') }}</dd></div>
+                    <div><dt>{{ t('交易网络') }}</dt><dd>Solana · {{ t('未来支持') }}</dd></div>
+                  </dl>
+                  <div class="cx-notice"><ShieldCheck :size="15" /><p>{{ t('真实交易需在售出后提交销毁视频，由系统管理员审核通过后生成 NFT；本页面藏品图片仅作界面示意。') }}</p></div>
+                </div>
+                <div v-else class="cx-pane cx-history">
+                  <div class="cx-history-step"><span class="cx-history-icon cx-hi-a"><Image :size="14" /></span><span><strong>{{ t('照片来源已注明') }}</strong><small>Wikimedia Commons · {{ activeListing.license }}</small></span><BadgeCheck :size="14" /></div>
+                  <div class="cx-history-step"><span class="cx-history-icon cx-hi-b"><PackageCheck :size="14" /></span><span><strong>{{ t('购买凭证与鉴定资料') }}</strong><small>{{ t('正式商品上架时由卖家提交') }}</small></span><Clock3 :size="14" /></div>
+                  <div class="cx-history-step"><span class="cx-history-icon cx-hi-c"><Video :size="14" /></span><span><strong>{{ t('销毁视频凭证') }}</strong><small>{{ t('卖出后由卖家拍摄并提交，等待系统管理员审核') }}</small></span><Clock3 :size="14" /></div>
+                  <div class="cx-history-step"><span class="cx-history-icon cx-hi-d"><ShieldCheck :size="14" /></span><span><strong>{{ t('管理员审核状态') }}</strong><small>{{ t('销毁完成 · 待管理员审核') }}</small></span><Clock3 :size="14" /></div>
+                  <div class="cx-history-step"><span class="cx-history-icon cx-hi-e"><Sparkles :size="14" /></span><span><strong>{{ t('Item NFT 与交易历史') }}</strong><small>{{ t('审核通过后生成 NFT，永久记录在 Solana 链上') }}</small></span><Clock3 :size="14" /></div>
+                </div>
+                <div class="cx-dialog-actions">
+                  <button class="cx-buy" type="button" @click="showCheckout = true">{{ t('预览订单费用') }} <ArrowRight :size="16" /></button>
+                  <button class="cx-fav" type="button" :aria-label="favorites.has(activeListing.id) ? t('移出收藏') : t('加入收藏')" @click="toggleFavorite(activeListing.id)"><Heart :size="17" :fill="favorites.has(activeListing.id) ? 'currentColor' : 'none'" /></button>
+                </div>
+                <p class="cx-action-note"><Info :size="12" />{{ t('预览不会扣款、签名或创建链上订单') }}</p>
+              </template>
+
+              <template v-else>
+                <button class="cx-back" type="button" @click="showCheckout = false"><ArrowRight class="cx-back-arrow" :size="14" /> {{ t('返回藏品详情') }}</button>
+                <div class="cx-dialog-heading">
+                  <div class="cx-overline"><span>ORDER PREVIEW</span><span class="cx-live-dot" aria-hidden="true"></span>{{ t('本地试算') }}</div>
+                  <h2>{{ t('费用明细') }}</h2>
+                  <p>{{ listingText(activeListing, 'name') }} · {{ t('不会创建实际订单') }}</p>
+                </div>
+                <div class="cx-ledger">
+                  <div><span>{{ t('藏品价格') }} <small>{{ t('演示报价') }}</small></span><strong>{{ activeListing.price.toLocaleString('en-US') }} TRF</strong></div>
+                  <div><span>{{ t('市场服务费') }} <small>{{ t('建议比例 · 10%') }}</small></span><strong>{{ Math.round(activeListing.price * 0.1).toLocaleString('en-US') }} TRF</strong></div>
+                  <div class="cx-ledger-total"><span>{{ t('试算合计') }} <small>{{ t('服务费用未计入') }}</small></span><strong>{{ Math.round(activeListing.price * 1.1).toLocaleString('en-US') }} <small>TRF</small></strong></div>
+                </div>
+                <div class="cx-escrow-note"><LockKeyhole :size="15" /><div><strong>{{ t('订单托管为白皮书拟议流程') }}</strong><span>{{ t('真实交易需等待钱包、订单合约、销毁视频审核与 NFT 铸造机制接入。') }}</span></div></div>
+                <button class="cx-buy cx-buy-quiet" type="button" @click="notify(t('预览完成：尚未签名、扣款或提交订单'))">{{ t('完成费用预览') }} <Check :size="15" /></button>
+                <p class="cx-action-note"><Info :size="12" />{{ t('市场 10% 服务费为白皮书初始建议比例，尚未实施') }}</p>
+              </template>
+            </div>
+          </div>
+        </section>
+      </div>
+    </Transition>
+
+    <Transition name="modal-fade">
+      <div v-if="showSellerPanel" class="cx-overlay" @mousedown.self="closeDialogs">
+        <section class="cx-sheet" role="dialog" aria-modal="true" aria-labelledby="seller-dialog-title">
+          <div class="cx-sheet-bar">
+            <span class="cx-sheet-mark"><PackageCheck :size="16" /></span>
+            <span class="cx-tiny">SELLER READINESS</span>
+            <button class="cx-dialog-close" type="button" :aria-label="t('关闭')" @click="closeDialogs"><X :size="18" /></button>
+          </div>
+          <h2 id="seller-dialog-title">{{ t('每件上架，都有准备。') }}</h2>
+          <p class="cx-sheet-lede">{{ t('未来开放上架前，卖家需要准备以下商品资料：') }}</p>
+          <ol class="cx-checklist">
+            <li><span class="cx-check-no">01</span><span><strong>{{ t('商品本体与高清照片') }}</strong><small>{{ t('清楚记录各角度、配件与包装') }}</small></span><Check :size="15" /></li>
+            <li><span class="cx-check-no">02</span><span><strong>{{ t('购买凭证与序列信息') }}</strong><small>{{ t('平台或合作鉴定方审核后建立档案') }}</small></span><Check :size="15" /></li>
+            <li><span class="cx-check-no">03</span><span><strong>{{ t('售出后拍摄完整销毁视频') }}</strong><small>{{ t('视频需覆盖实物销毁全过程，并提交视频哈希与时间戳') }}</small></span><Check :size="15" /></li>
+            <li><span class="cx-check-no">04</span><span><strong>{{ t('报价、时限与履约保证金') }}</strong><small>{{ t('拟以 TRF 报价，并在售出后按规则完成销毁') }}</small></span><Check :size="15" /></li>
+          </ol>
+          <div class="cx-sheet-note"><Info :size="14" /><span>{{ t('卖家认证、销毁视频提交和管理员审核功能尚未接入。此清单仅供浏览，不会收集或提交信息。') }}</span></div>
+          <button class="cx-btn cx-btn-primary cx-sheet-cta" type="button" @click="closeDialogs">{{ t('了解') }} <ArrowRight :size="15" /></button>
+        </section>
+      </div>
+    </Transition>
+
+    <Transition name="modal-fade">
+      <div v-if="showWalletPanel" class="cx-overlay" @mousedown.self="closeDialogs">
+        <section class="cx-sheet" role="dialog" aria-modal="true" aria-labelledby="wallet-dialog-title">
+          <div class="cx-sheet-bar">
+            <span class="cx-sheet-mark"><img src="/brand/logo.svg" alt="" /></span>
+            <span class="cx-tiny">WALLET CONNECTION</span>
+            <button class="cx-dialog-close" type="button" :aria-label="t('关闭')" @click="closeDialogs"><X :size="18" /></button>
+          </div>
+          <h2 id="wallet-dialog-title">{{ t('钱包接入尚在规划。') }}</h2>
+          <p class="cx-sheet-lede">{{ t('这是 Custoria.xyz 的产品交互预览。连接钱包、链上支付、NFT 铸造和质押操作暂未启用。') }}</p>
+          <div class="cx-network"><span class="cx-network-led" aria-hidden="true"></span>{{ t('目标网络') }} <strong>Solana</strong><span class="cx-network-dev">{{ t('待集成') }}</span></div>
+          <button class="cx-btn cx-btn-primary cx-sheet-cta" type="button" @click="closeDialogs">{{ t('返回浏览') }} <ArrowRight :size="15" /></button>
+        </section>
+      </div>
+    </Transition>
+
+    <Transition name="toast">
+      <div v-if="toastMessage" class="cx-toast"><span class="cx-toast-led" aria-hidden="true"></span>{{ toastMessage }}<button :aria-label="t('关闭提示')" type="button" @click="toastMessage = ''"><X :size="13" /></button></div>
+    </Transition>
+  </div>
+</template>

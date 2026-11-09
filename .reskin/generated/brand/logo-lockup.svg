@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
+  <title id="title">Custoria wordmark</title>
+  <desc id="desc">The Custoria bubble mark with the custoria.xyz wordmark and the tagline Collect with context.</desc>
+  <defs>
+    <linearGradient id="cxLockGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF6FB5"/>
+      <stop offset="0.55" stop-color="#E6006F"/>
+      <stop offset="1" stop-color="#A80050"/>
+    </linearGradient>
+  </defs>
+  <rect x="26" y="54" width="292" height="292" rx="86" fill="url(#cxLockGradient)"/>
+  <path d="M234 158a68 68 0 1 0 0 84" fill="none" stroke="#FFFFFF" stroke-width="33" stroke-linecap="round"/>
+  <circle cx="271" cy="132" r="11.5" fill="#FFFFFF" opacity="0.94"/>
+  <circle cx="313" cy="95" r="5.5" fill="#FFD1E2" opacity="0.9"/>
+  <text x="376" y="216" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="92" font-weight="700" letter-spacing="-2">custoria<tspan fill="#C2005D" font-size="44" font-weight="600" letter-spacing="0">.xyz</tspan></text>
+  <text x="380" y="266" fill="#6D6A70" font-family="SFMono-Regular,Cascadia Mono,Consolas,monospace" font-size="17" letter-spacing="4.5">COLLECT WITH CONTEXT.</text>
+</svg>

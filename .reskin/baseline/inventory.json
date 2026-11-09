@@ -1,0 +1,2608 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-21T16:47:23.225Z",
+  "project": {
+    "root": "E:/workspace/chuangye/solana/ppmt2s/website",
+    "name": "custoria-website",
+    "vueVersion": "^3.5.13",
+    "nuxt": false,
+    "dependencies": [
+      "@lucide/vue",
+      "@vitejs/plugin-vue",
+      "typescript",
+      "vite",
+      "vue",
+      "vue-tsc"
+    ],
+    "packageManager": "npm",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview",
+      "check": "vue-tsc --noEmit"
+    },
+    "frameworks": []
+  },
+  "stats": {
+    "filesScanned": 3,
+    "vueFiles": 1,
+    "routes": 1,
+    "staticTextTokens": 79,
+    "bindingTokens": 256,
+    "eventTokens": 46,
+    "classNames": 260,
+    "colors": 53
+  },
+  "routes": [
+    {
+      "path": "/",
+      "dynamic": false
+    }
+  ],
+  "unresolvedRoutes": [],
+  "archetype": {
+    "id": "terminal-console",
+    "family": "linear",
+    "traits": {
+      "sidebar": false,
+      "topbar": false,
+      "cards": true,
+      "hero": false,
+      "table": true,
+      "grid": true,
+      "tabs": true,
+      "modal": true,
+      "charts": false,
+      "sticky": true,
+      "orbital": false,
+      "terminal": true,
+      "bento": false,
+      "ticker": false,
+      "gallery": false
+    }
+  },
+  "palette": [
+    {
+      "hex": "#04121f",
+      "count": 7
+    },
+    {
+      "hex": "#061730",
+      "count": 4
+    },
+    {
+      "hex": "#0e2b4d",
+      "count": 4
+    },
+    {
+      "hex": "#06182e",
+      "count": 3
+    },
+    {
+      "hex": "#0a2140",
+      "count": 3
+    },
+    {
+      "hex": "#000000",
+      "count": 2
+    },
+    {
+      "hex": "#071a33",
+      "count": 2
+    },
+    {
+      "hex": "#1c3a60",
+      "count": 2
+    },
+    {
+      "hex": "#4e6f96",
+      "count": 2
+    },
+    {
+      "hex": "#7cc4ff",
+      "count": 2
+    },
+    {
+      "hex": "#000818",
+      "count": 1
+    },
+    {
+      "hex": "#030c18",
+      "count": 1
+    },
+    {
+      "hex": "#06172e",
+      "count": 1
+    },
+    {
+      "hex": "#0a2242",
+      "count": 1
+    },
+    {
+      "hex": "#0c2547",
+      "count": 1
+    },
+    {
+      "hex": "#0e2c55",
+      "count": 1
+    },
+    {
+      "hex": "#12315a",
+      "count": 1
+    },
+    {
+      "hex": "#12aaff",
+      "count": 1
+    },
+    {
+      "hex": "#142f52",
+      "count": 1
+    },
+    {
+      "hex": "#1b3a60",
+      "count": 1
+    },
+    {
+      "hex": "#28a0f0",
+      "count": 1
+    },
+    {
+      "hex": "#2c5080",
+      "count": 1
+    },
+    {
+      "hex": "#4ade80",
+      "count": 1
+    },
+    {
+      "hex": "#a9c0da",
+      "count": 1
+    },
+    {
+      "hex": "#d8f0ea",
+      "count": 1
+    },
+    {
+      "hex": "#dbe8f6",
+      "count": 1
+    },
+    {
+      "hex": "#e6e1f4",
+      "count": 1
+    },
+    {
+      "hex": "#f2c94c",
+      "count": 1
+    },
+    {
+      "hex": "#f2f7ff",
+      "count": 1
+    },
+    {
+      "hex": "#f4ecd2",
+      "count": 1
+    },
+    {
+      "hex": "#f6dfda",
+      "count": 1
+    },
+    {
+      "hex": "#ff8f8f",
+      "count": 1
+    }
+  ],
+  "fonts": [],
+  "classNames": [
+    "sg-accent",
+    "sg-action-note",
+    "sg-alloc",
+    "sg-alloc-row",
+    "sg-amount",
+    "sg-back",
+    "sg-back-arrow",
+    "sg-badge",
+    "sg-beacon",
+    "sg-block",
+    "sg-block-copy",
+    "sg-block-head",
+    "sg-buy",
+    "sg-buy-quiet",
+    "sg-calc",
+    "sg-calc-head",
+    "sg-calc-icon",
+    "sg-calc-title",
+    "sg-check-no",
+    "sg-checklist",
+    "sg-chip",
+    "sg-cmd",
+    "sg-cmd-name",
+    "sg-cmd-on",
+    "sg-cmdlist",
+    "sg-condition",
+    "sg-condition-sep",
+    "sg-console",
+    "sg-console-bar",
+    "sg-console-main",
+    "sg-console-rail",
+    "sg-copy",
+    "sg-core",
+    "sg-credit",
+    "sg-cta",
+    "sg-deck",
+    "sg-demo",
+    "sg-dialog",
+    "sg-dialog-actions",
+    "sg-dialog-bar",
+    "sg-dialog-body",
+    "sg-dialog-close",
+    "sg-dialog-code",
+    "sg-dialog-frame",
+    "sg-dialog-grid",
+    "sg-dialog-heading",
+    "sg-dialog-media",
+    "sg-dialog-photo-label",
+    "sg-disclosure",
+    "sg-display",
+    "sg-domain",
+    "sg-draft",
+    "sg-empty",
+    "sg-empty-mark",
+    "sg-escrow",
+    "sg-escrow-arrow",
+    "sg-escrow-done",
+    "sg-escrow-dot",
+    "sg-escrow-note",
+    "sg-escrow-step",
+    "sg-explainer",
+    "sg-eyebrow",
+    "sg-eyebrow-bar",
+    "sg-facts",
+    "sg-fav",
+    "sg-field-gap",
+    "sg-field-label",
+    "sg-filter",
+    "sg-filter-count",
+    "sg-filters",
+    "sg-footnote",
+    "sg-formula",
+    "sg-ghost",
+    "sg-heart",
+    "sg-hi-a",
+    "sg-hi-b",
+    "sg-hi-c",
+    "sg-hi-d",
+    "sg-hi-e",
+    "sg-hint-brand",
+    "sg-hint-credits",
+    "sg-hint-disclaimer",
+    "sg-hint-grid",
+    "sg-hint-legal",
+    "sg-hint-line",
+    "sg-hint-links",
+    "sg-hintbar",
+    "sg-history",
+    "sg-history-icon",
+    "sg-history-step",
+    "sg-icon-a",
+    "sg-icon-b",
+    "sg-icon-c",
+    "sg-identity",
+    "sg-identity-text",
+    "sg-inspector",
+    "sg-inspector-data",
+    "sg-inspector-frame",
+    "sg-inspector-img",
+    "sg-inspector-note",
+    "sg-inspector-note-text",
+    "sg-inspector-photo",
+    "sg-inspector-tag",
+    "sg-inspector-title",
+    "sg-inspector-top",
+    "sg-intro",
+    "sg-intro-actions",
+    "sg-intro-copy",
+    "sg-kicker",
+    "sg-led",
+    "sg-led-a",
+    "sg-led-b",
+    "sg-led-c",
+    "sg-lede",
+    "sg-ledger",
+    "sg-ledger-total",
+    "sg-linkbutton",
+    "sg-live-dot",
+    "sg-local",
+    "sg-locale",
+    "sg-mark",
+    "sg-mark-sm",
+    "sg-market",
+    "sg-menu-sheet",
+    "sg-menu-toggle",
+    "sg-mint",
+    "sg-mint-copy",
+    "sg-mint-label",
+    "sg-mint-value",
+    "sg-motto",
+    "sg-muted-tag",
+    "sg-network",
+    "sg-network-dev",
+    "sg-network-led",
+    "sg-node",
+    "sg-node-budget",
+    "sg-node-fees",
+    "sg-node-stakers",
+    "sg-note-button",
+    "sg-notice",
+    "sg-overlay",
+    "sg-overline",
+    "sg-pane-label",
+    "sg-passport",
+    "sg-passport-caption",
+    "sg-passport-code",
+    "sg-passport-dot",
+    "sg-passport-key",
+    "sg-passport-led",
+    "sg-passport-media",
+    "sg-passport-note",
+    "sg-passport-specs",
+    "sg-passport-stamp",
+    "sg-passport-state",
+    "sg-passport-title",
+    "sg-passport-top",
+    "sg-phase",
+    "sg-phase-marker",
+    "sg-phase-no",
+    "sg-phase-now",
+    "sg-phase-state",
+    "sg-phase-tail",
+    "sg-phases",
+    "sg-plan",
+    "sg-price-block",
+    "sg-price-fiat",
+    "sg-price-key",
+    "sg-primary",
+    "sg-prompt",
+    "sg-prompt-copy",
+    "sg-prompt-mark",
+    "sg-proof",
+    "sg-proof-grid",
+    "sg-pulse",
+    "sg-rail",
+    "sg-rail-cursor",
+    "sg-rail-foot",
+    "sg-rail-prompt",
+    "sg-range",
+    "sg-range-ends",
+    "sg-readout",
+    "sg-readout-dash",
+    "sg-readout-key",
+    "sg-readout-list",
+    "sg-readout-no",
+    "sg-readout-row",
+    "sg-readout-text",
+    "sg-rewards",
+    "sg-rewards-context",
+    "sg-rewards-grid",
+    "sg-ring",
+    "sg-ring-1",
+    "sg-ring-2",
+    "sg-row",
+    "sg-row-main",
+    "sg-row-meta",
+    "sg-row-name",
+    "sg-row-no",
+    "sg-row-note",
+    "sg-row-price",
+    "sg-row-series",
+    "sg-rows",
+    "sg-search",
+    "sg-segment",
+    "sg-select-wrap",
+    "sg-session",
+    "sg-sheet",
+    "sg-sheet-bar",
+    "sg-sheet-cta",
+    "sg-sheet-lede",
+    "sg-sheet-mark",
+    "sg-sheet-note",
+    "sg-shell",
+    "sg-sort",
+    "sg-source",
+    "sg-source-caption",
+    "sg-spec",
+    "sg-specs",
+    "sg-stage",
+    "sg-stage-icon",
+    "sg-stage-no",
+    "sg-stage-tags",
+    "sg-stages",
+    "sg-state-dot",
+    "sg-status-actions",
+    "sg-status-jump",
+    "sg-status-key",
+    "sg-status-note",
+    "sg-status-slash",
+    "sg-status-track",
+    "sg-statusbar",
+    "sg-statuspill",
+    "sg-sub",
+    "sg-supply",
+    "sg-supply-data",
+    "sg-supply-foot",
+    "sg-supply-headline",
+    "sg-supply-key",
+    "sg-supply-note",
+    "sg-swatch",
+    "sg-swatch-1",
+    "sg-swatch-2",
+    "sg-swatch-3",
+    "sg-swatch-4",
+    "sg-swatch-5",
+    "sg-swatch-6",
+    "sg-tabbar",
+    "sg-tabpane",
+    "sg-thumb",
+    "sg-thumb-button",
+    "sg-thumb-code",
+    "sg-tiny",
+    "sg-title",
+    "sg-toast",
+    "sg-toast-led",
+    "sg-trust",
+    "sg-type",
+    "sg-weight",
+    "sg-wordmark",
+    "sg-xlink"
+  ],
+  "designSignals": {
+    "frameworks": [],
+    "cssVars": [
+      "--accent",
+      "--accent-2",
+      "--accent-safe",
+      "--bg",
+      "--border",
+      "--danger",
+      "--display-tracking",
+      "--display-weight",
+      "--font-body",
+      "--font-display",
+      "--font-mono",
+      "--ink",
+      "--label-tracking",
+      "--line",
+      "--line-soft",
+      "--line-strong",
+      "--max-width",
+      "--motion-ease",
+      "--motion-fast",
+      "--muted",
+      "--on-accent",
+      "--page-pad",
+      "--radius-lg",
+      "--radius-md",
+      "--radius-sm",
+      "--rail-w",
+      "--shadow",
+      "--space-1",
+      "--space-2",
+      "--space-3",
+      "--space-4",
+      "--space-5",
+      "--space-6",
+      "--status-h",
+      "--success",
+      "--surface",
+      "--surface-alt",
+      "--surface-deep",
+      "--warning"
+    ],
+    "colorVars": [
+      {
+        "name": "--accent",
+        "value": "#28a0f0"
+      },
+      {
+        "name": "--accent-2",
+        "value": "#12aaff"
+      },
+      {
+        "name": "--accent-safe",
+        "value": "#7cc4ff"
+      },
+      {
+        "name": "--bg",
+        "value": "#071a33"
+      },
+      {
+        "name": "--danger",
+        "value": "#ff8f8f"
+      },
+      {
+        "name": "--ink",
+        "value": "#f2f7ff"
+      },
+      {
+        "name": "--line",
+        "value": "#1b3a60"
+      },
+      {
+        "name": "--line-soft",
+        "value": "#142f52"
+      },
+      {
+        "name": "--line-strong",
+        "value": "#2c5080"
+      },
+      {
+        "name": "--muted",
+        "value": "#a9c0da"
+      },
+      {
+        "name": "--on-accent",
+        "value": "#04121f"
+      },
+      {
+        "name": "--success",
+        "value": "#4ade80"
+      },
+      {
+        "name": "--surface",
+        "value": "#0c2547"
+      },
+      {
+        "name": "--surface-alt",
+        "value": "#12315a"
+      },
+      {
+        "name": "--surface-deep",
+        "value": "#0a2242"
+      },
+      {
+        "name": "--warning",
+        "value": "#f2c94c"
+      }
+    ],
+    "mediaQueries": [
+      "@media (max-width: 1024px)",
+      "@media (max-width: 1080px)",
+      "@media (max-width: 1280px)",
+      "@media (max-width: 420px)",
+      "@media (max-width: 720px)",
+      "@media (max-width: 860px)",
+      "@media (prefers-reduced-motion: no-preference)",
+      "@media (prefers-reduced-motion: reduce)"
+    ],
+    "darkMode": false
+  },
+  "structure": {
+    "tagCounts": {
+      "a": 22,
+      "arrowdownup": 1,
+      "arrowright": 16,
+      "arrowupright": 5,
+      "badgecheck": 4,
+      "box": 2,
+      "br": 4,
+      "button": 31,
+      "check": 5,
+      "chevrondown": 2,
+      "clock3": 4,
+      "code": 2,
+      "coins": 2,
+      "copy": 1,
+      "dd": 12,
+      "div": 136,
+      "dl": 4,
+      "dt": 12,
+      "em": 1,
+      "externallink": 2,
+      "footer": 1,
+      "h1": 1,
+      "h2": 11,
+      "h3": 11,
+      "header": 1,
+      "heart": 2,
+      "image": 3,
+      "img": 9,
+      "info": 6,
+      "input": 3,
+      "kbd": 1,
+      "label": 3,
+      "landmark": 1,
+      "li": 28,
+      "lockkeyhole": 2,
+      "main": 1,
+      "menu": 1,
+      "nav": 2,
+      "ol": 5,
+      "option": 6,
+      "p": 28,
+      "packagecheck": 2,
+      "plus": 1,
+      "search": 2,
+      "section": 11,
+      "select": 2,
+      "shieldcheck": 5,
+      "small": 18,
+      "span": 194,
+      "sparkles": 1,
+      "strong": 18,
+      "table": 1,
+      "tbody": 1,
+      "td": 6,
+      "template": 2,
+      "th": 6,
+      "ticket": 1,
+      "tr": 6,
+      "transition": 4,
+      "trendingup": 1,
+      "ul": 4,
+      "video": 2,
+      "walletcards": 2,
+      "x": 6
+    },
+    "depthHistogram": {
+      "0": 1,
+      "1": 7,
+      "2": 13,
+      "3": 43,
+      "4": 58,
+      "5": 82,
+      "6": 144,
+      "7": 138,
+      "8": 108,
+      "9": 64,
+      "10": 32
+    },
+    "maxDepth": 10,
+    "topLevelTags": [
+      "div"
+    ],
+    "skeletonSample": [
+      "div",
+      "  header",
+      "    div",
+      "      span",
+      "      span",
+      "      span",
+      "      span",
+      "      a",
+      "        arrowupright",
+      "    div",
+      "      button",
+      "      button",
+      "        plus",
+      "      button",
+      "        walletcards",
+      "      button",
+      "        x",
+      "        menu",
+      "    nav",
+      "      a",
+      "        arrowright",
+      "      a",
+      "        arrowright",
+      "      a",
+      "        arrowright",
+      "      a",
+      "        arrowright",
+      "      button",
+      "        walletcards",
+      "  main",
+      "    nav",
+      "      a",
+      "        img",
+      "        span",
+      "          span",
+      "            span",
+      "          span",
+      "      ol",
+      "        li",
+      "          a",
+      "            span",
+      "        li",
+      "          a",
+      "            span",
+      "        li",
+      "          a",
+      "            span",
+      "        li",
+      "          a",
+      "            span",
+      "      div",
+      "        span",
+      "        span",
+      "    div",
+      "      section",
+      "        div",
+      "          div",
+      "            span",
+      "          h1",
+      "            br",
+      "            span",
+      "          p",
+      "          div",
+      "            button",
+      "              arrowright",
+      "            button",
+      "              arrowupright",
+      "          div",
+      "            div",
+      "              span",
+      "                span",
+      "              code",
+      "            button",
+      "              copy",
+      "              span",
+      "          a",
+      "            x",
+      "            span",
+      "            externallink",
+      "          ul",
+      "            li",
+      "              span",
+      "            li",
+      "              span",
+      "            li",
+      "              span",
+      "        div",
+      "          div",
+      "            div",
+      "              span",
+      "                span",
+      "              span",
+      "            div",
+      "              img",
+      "            span",
+      "              badgecheck",
+      "          div",
+      "            span",
+      "            span",
+      "              box",
+      "            h2",
+      "              br",
+      "              span",
+      "            p",
+      "            dl",
+      "              div",
+      "                dt",
+      "                dd",
+      "                  small",
+      "              div",
+      "                dt",
+      "                dd",
+      "                  em",
+      "            p",
+      "              shieldcheck",
+      "              span",
+      "      section",
+      "        dl",
+      "          div",
+      "            dt"
+    ]
+  },
+  "contentContract": {
+    "schemaVersion": 1,
+    "meta": {
+      "projectName": "custoria-website",
+      "title": "custoria-website",
+      "lang": "en"
+    },
+    "routes": [
+      "/"
+    ],
+    "visibleText": [
+      {
+        "value": ".xyz",
+        "count": 2
+      },
+      {
+        "value": "· CC BY-SA 2.0",
+        "count": 1
+      },
+      {
+        "value": "© 2026 Custoria.xyz · Independent collector marketplace",
+        "count": 1
+      },
+      {
+        "value": "0 TRF",
+        "count": 1
+      },
+      {
+        "value": "01",
+        "count": 2
+      },
+      {
+        "value": "01 / ITEM",
+        "count": 1
+      },
+      {
+        "value": "02",
+        "count": 2
+      },
+      {
+        "value": "02 / BURN",
+        "count": 1
+      },
+      {
+        "value": "03",
+        "count": 2
+      },
+      {
+        "value": "03 / MINT",
+        "count": 1
+      },
+      {
+        "value": "04",
+        "count": 1
+      },
+      {
+        "value": "1,000,000,000",
+        "count": 1
+      },
+      {
+        "value": "10%",
+        "count": 2
+      },
+      {
+        "value": "15%",
+        "count": 2
+      },
+      {
+        "value": "2,480",
+        "count": 1
+      },
+      {
+        "value": "20%",
+        "count": 1
+      },
+      {
+        "value": "30%",
+        "count": 1
+      },
+      {
+        "value": "50,000 TRF",
+        "count": 1
+      },
+      {
+        "value": "A MARKET BUILT FOR COLLECTORS",
+        "count": 1
+      },
+      {
+        "value": "BUILT AROUND REAL TRADES",
+        "count": 1
+      },
+      {
+        "value": "Collect with context.",
+        "count": 1
+      },
+      {
+        "value": "COLLECT WITH CONTEXT.",
+        "count": 2
+      },
+      {
+        "value": "COLLECTIBLE / 001",
+        "count": 1
+      },
+      {
+        "value": "Collector Pass",
+        "count": 1
+      },
+      {
+        "value": "COPY",
+        "count": 1
+      },
+      {
+        "value": "Ctrl K",
+        "count": 1
+      },
+      {
+        "value": "custoria",
+        "count": 2
+      },
+      {
+        "value": "DEMO ITEM /",
+        "count": 1
+      },
+      {
+        "value": "DESIGNER VINYL",
+        "count": 1
+      },
+      {
+        "value": "DRAFT ROADMAP",
+        "count": 1
+      },
+      {
+        "value": "Dunny",
+        "count": 1
+      },
+      {
+        "value": "Dunny · CC BY-SA 4.0",
+        "count": 1
+      },
+      {
+        "value": "FOLLOW @CUSTORIA ON X",
+        "count": 1
+      },
+      {
+        "value": "FROM CONCEPT TO COMMUNITY",
+        "count": 1
+      },
+      {
+        "value": "Genesis Pass",
+        "count": 1
+      },
+      {
+        "value": "Hootlum · CC BY-SA 4.0",
+        "count": 1
+      },
+      {
+        "value": "Item NFT",
+        "count": 1
+      },
+      {
+        "value": "ITEM NFT",
+        "count": 1
+      },
+      {
+        "value": "ITEM PASSPORT",
+        "count": 1
+      },
+      {
+        "value": "ITEM PHOTO",
+        "count": 1
+      },
+      {
+        "value": "Molly · CC0",
+        "count": 1
+      },
+      {
+        "value": "Nendoroid · CC BY 2.0",
+        "count": 1
+      },
+      {
+        "value": "ONLY REALIZED FUNDS",
+        "count": 1
+      },
+      {
+        "value": "ORDER PREVIEW",
+        "count": 1
+      },
+      {
+        "value": "PHASE 00",
+        "count": 1
+      },
+      {
+        "value": "PHASE 01",
+        "count": 1
+      },
+      {
+        "value": "PHASE 02",
+        "count": 1
+      },
+      {
+        "value": "PHASE 03–04",
+        "count": 1
+      },
+      {
+        "value": "PHOTO REF / 001",
+        "count": 1
+      },
+      {
+        "value": "PROTOTYPE MINT",
+        "count": 1
+      },
+      {
+        "value": "REWARDS FROM REAL ACTIVITY",
+        "count": 1
+      },
+      {
+        "value": "SELLER READINESS",
+        "count": 1
+      },
+      {
+        "value": "Solana",
+        "count": 1
+      },
+      {
+        "value": "SOLANA",
+        "count": 1
+      },
+      {
+        "value": "Solana ·",
+        "count": 1
+      },
+      {
+        "value": "THE COLLECTOR'S EDIT · 001",
+        "count": 1
+      },
+      {
+        "value": "THE COLLECTOR'S MARKET",
+        "count": 1
+      },
+      {
+        "value": "TRF",
+        "count": 9
+      },
+      {
+        "value": "TRF · PROPOSED TOKEN MODEL",
+        "count": 1
+      },
+      {
+        "value": "TRF /",
+        "count": 1
+      },
+      {
+        "value": "w",
+        "count": 1
+      },
+      {
+        "value": "WALLET CONNECTION",
+        "count": 1
+      },
+      {
+        "value": "Wikimedia Commons ·",
+        "count": 1
+      }
+    ],
+    "hiddenText": [],
+    "attributes": [
+      {
+        "name": "alt",
+        "value": "Custoria proof mark",
+        "count": 1
+      },
+      {
+        "name": "href",
+        "value": "#market",
+        "count": 3
+      },
+      {
+        "name": "href",
+        "value": "#protocol",
+        "count": 4
+      },
+      {
+        "name": "href",
+        "value": "#rewards",
+        "count": 3
+      },
+      {
+        "name": "href",
+        "value": "#roadmap",
+        "count": 3
+      },
+      {
+        "name": "href",
+        "value": "#top",
+        "count": 2
+      },
+      {
+        "name": "href",
+        "value": "https://commons.wikimedia.org/wiki/File:Dunny_vinyl_figure_which_portrays_a_dragon_embroidered_on_a_silk_brocade_door_valance_and_side_panels_(Chinese,_17th-18th_century)_in_The_MET_collection.jpg",
+        "count": 1
+      },
+      {
+        "name": "href",
+        "value": "https://commons.wikimedia.org/wiki/File:HOOTLUM_vinyl_art_figure_(white_edition).jpg",
+        "count": 1
+      },
+      {
+        "name": "href",
+        "value": "https://commons.wikimedia.org/wiki/File:KanColle_Nendoroid_-_Kirishima.jpg",
+        "count": 1
+      },
+      {
+        "name": "href",
+        "value": "https://commons.wikimedia.org/wiki/File:Molly_(art_toy).jpg",
+        "count": 1
+      },
+      {
+        "name": "href",
+        "value": "https://commons.wikimedia.org/wiki/File:Nendoroid_Collection.jpg",
+        "count": 1
+      },
+      {
+        "name": "href",
+        "value": "https://x.com/Custoria",
+        "count": 1
+      },
+      {
+        "name": "name",
+        "value": "modal-fade",
+        "count": 3
+      },
+      {
+        "name": "name",
+        "value": "toast",
+        "count": 1
+      },
+      {
+        "name": "src",
+        "value": "/brand/logo.svg",
+        "count": 5
+      },
+      {
+        "name": "src",
+        "value": "/images/collectibles/dragon.jpg",
+        "count": 2
+      },
+      {
+        "name": "title",
+        "value": "Copy prototype mint address",
+        "count": 1
+      },
+      {
+        "name": "value",
+        "value": "collector",
+        "count": 1
+      },
+      {
+        "name": "value",
+        "value": "genesis",
+        "count": 1
+      },
+      {
+        "name": "value",
+        "value": "high",
+        "count": 1
+      },
+      {
+        "name": "value",
+        "value": "low",
+        "count": 1
+      },
+      {
+        "name": "value",
+        "value": "none",
+        "count": 1
+      },
+      {
+        "name": "value",
+        "value": "recommended",
+        "count": 1
+      }
+    ],
+    "bindings": [
+      {
+        "kind": "asset",
+        "expr": "activeListing.image",
+        "count": 1
+      },
+      {
+        "kind": "asset",
+        "expr": "item.image",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "activeListing.creditUrl",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "activeListing.image",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "item.image",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "listingText(activeListing, 'imageAlt')",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "listingText(item, 'imageAlt')",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "t('蓝龙 Dunny 商品凭证中的实物照片示意')",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "t('青蓝色龙纹的收藏级设计师公仔')",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "t('搜索藏品或系列')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "activeListing.credit",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "activeListing.id",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "activeListing.license",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "activeListing.price.toLocaleString('en-US')",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "activeListing.verified ? t('概念演示状态') : t('尚无审核记录')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "exampleWeight.toLocaleString('en-US')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "favorites.size",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "item.id",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "item.price.toLocaleString('en-US')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "listingText(activeListing, 'condition')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "listingText(activeListing, 'edition')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "listingText(activeListing, 'name')",
+        "count": 3
+      },
+      {
+        "kind": "interpolation",
+        "expr": "listingText(activeListing, 'subtitle')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "listingText(item, 'condition')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "listingText(item, 'edition')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "listingText(item, 'name')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "listingText(item, 'subtitle')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "locale === 'en' ? '中' : 'EN'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "locale === 'en' ? 'Blue Dragon Dunny' : '蓝龙 Dunny'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "locale === 'en' ? 'Blue Dragon' : '蓝龙'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "locale === 'en' ? 'days' : '天'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "locale === 'en' ? 'Designer vinyl' : '设计师搪胶'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "lock.days",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "lock.factor",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "Math.round(activeListing.price * 0.1).toLocaleString('en-US')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "Math.round(activeListing.price * 1.1).toLocaleString('en-US')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('按真实交易数据逐步开放奖池、质押奖励预算与社区参数提案。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('白皮书草案参数')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('白皮书初始模型用于讨论与测试，代币供给、分配和释放尚非已部署事实。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('白皮书流程 · 设计草案')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('报价、时限与履约保证金')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('本地交互')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('本地试算')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('不会创建实际订单')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('不可逆实物状态')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('不来自承诺。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('不是任何商品品牌的官方商城或授权销售渠道。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('参考藏品 · 演示照片')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('参考示例')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('参与机制验证')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('藏得认真，')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('藏品价格')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('藏品市集')",
+        "count": 3
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('藏品详情')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('草案参数可能调整；当前未部署质押、奖励池或会员 NFT 合约。奖励来自真实收入或事先公开的代币预算，不承诺固定 APY、收益、回购或代币价格。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('草案加成')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('测试 Genesis Pass、交易证明与社区任务，并验证质押和随机数机制。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('查看模型说明')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('查看全部藏品')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('产品与审计准备')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('产品预览 · Market prototype')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('潮玩二手市集，为实物藏品记录来历、交易与流转。认真收藏，也认真留证。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('成为卖家')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('持续披露与共同治理')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('从实物出发')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('从售出、视频销毁到管理员审核和铸造，状态都能被看懂。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('从一件实物开始，让每一次交易都留下清楚的来历。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('待集成')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('当期奖励池 × 个人权重 ÷ 全部有效权重')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('当前规划')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('订单托管、销毁视频与审核步骤逐项记录')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('订单托管')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('订单托管为白皮书拟议流程')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('都有迹可循。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('多签与时间锁管理 · 草案建议')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('返回藏品详情')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('返回浏览')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('费用明细')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('服务费用未计入')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('购买凭证哈希')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('购买凭证与鉴定资料')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('购买凭证与序列信息')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('管理员审核后铸造 NFT')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('管理员审核状态')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('逛逛藏品')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('规划中')",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('后续阶段')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('会员凭证')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('机制设计与测试网')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('机制先写清楚，')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('假设锁仓数量')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('价格由低到高')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('价格由高到低')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('检验。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('建好商品档案')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('建议比例 · 10%')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('建议初始总量')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('鉴定与成色')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('奖励分配思路')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('奖励季与社区治理')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('奖励来自参与，')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('交易保障')",
+        "count": 3
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('交易如何运作')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('交易完成后，卖家必须拍摄完整销毁过程并提交视频；实物销毁不可逆，视频哈希写入待审核档案。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('交易网络')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('交易有据')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('金库与商品采购')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('仅按锁仓数量与草案系数试算')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('就该有迹可循。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('了解')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('了解交易流程')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('连接钱包')",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('链上凭证')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('链上永久记录')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('链下数据')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('流动性与做市')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('路线图')",
+        "count": 3
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('路线图阶段是拟议方向；当前网站是产品交互预览。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('买家付款')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('卖出后由卖家拍摄并提交，等待系统管理员审核')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('卖家拍摄销毁视频')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('卖家认证、销毁视频提交和管理员审核功能尚未接入。此清单仅供浏览，不会收集或提交信息。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('卖家提交照片、购买凭证与序列信息，通过平台或合作鉴定方审核后才能进入市集。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('每个周期的奖励上限取决于已实现的可分配收入与经治理批准的预算。白皮书提出按锁仓数量、锁仓时间、会员凭证与持有时间计算权重。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('每件上架，都有准备。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('每一步，都经得起')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('目标网络')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('目前展示的商品名称、成色描述、TRF 报价与凭证标记均为网页演示内容，不代表真实库存、卖家或链上商品记录。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('拟以 TRF 报价，并在售出后按规则完成销毁')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('平台或合作鉴定方审核后建立档案')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('凭证记录')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('凭证陪伴交易')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('凭证随行。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('凭证资料已登记')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('钱包接入尚在规划。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('清楚记录各角度、配件与包装')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('权利范围')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('确认售出')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('让每件藏品，')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('商品本体与高清照片')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('商品记录与交易历史')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('商品类型')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('商品凭证')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('商品凭证不代表品牌方背书，亦不会转移商标、版权或角色形象权利。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('商品凭证与交易证明对应实物与交易历史')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('商品图片 · 演示来源')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('商品系列')",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('设计示意')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('社区、质押与交易奖励')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('社区共建')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('摄影')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('审核后铸造')",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('审核通过后生成 NFT，永久记录在 Solana 链上')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('审核通过后铸造')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('生态与合作伙伴')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('时间系数')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('实物先行')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('实物在前，')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('实物照片示意')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('市场 10% 服务费为白皮书初始建议比例，尚未实施')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('市场服务费')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('市场和法币参考价格尚未接入')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('市集 Alpha')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('示例报价 · 非实时价格')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('示例报价')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('示例权重')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('视频哈希与时间戳')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('视频需覆盖实物销毁全过程，并提交视频哈希与时间戳')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('试算合计')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('收藏的下一站 · ON SOLANA')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('收藏组合')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('售出后拍摄完整销毁视频')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('售出后拍摄销毁视频')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('售出后销毁实物，管理员审核后生成 NFT 并永久上链')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('锁仓周期')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('探索示例市集')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('提案参数 · 尚未发行')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('投资者与顾问')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('团队代币：建议 12 个月 cliff + 36 个月线性释放')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('团队与核心贡献者')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('推荐排序')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('完成费用预览')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('完善数据模型、代币经济模拟和合约规格；发布测试网前端并开展内部安全测试。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('为实物藏品而设计的 Solana 二手市集。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('为探索体验准备的示例藏品 · 所有商品与价格均为演示数据')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('未来开放上架前，卖家需要准备以下商品资料：')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('未来支持')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('无会员凭证')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('系统管理员核验销毁视频与订单后，才生成 Item NFT；争议期结束后生成 Trade Proof NFT，凭证在链上永久保存。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('系统管理员审核')",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('现在，')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('销毁视频')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('销毁视频哈希')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('销毁视频凭证')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('销毁完成 · 待管理员审核')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('小范围交易测试')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('演示报价')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('演示藏品照片均有来源')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('演示图片来源与许可：')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('邀请卖家试运行报价、托管、销毁视频提交、管理员审核与凭证铸造。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('一件实物，销毁后留下永久链上凭证。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('依照白皮书建议参数制作的交互式质押权重试算，不展示或预测收益。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('预览')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('预览不会扣款、签名或创建链上订单')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('预览订单费用')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('原型藏品')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('再逐步验证。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('暂未连接钱包或智能合约')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('照片、购买凭证与鉴定信息共同构成商品档案')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('照片来源已注明')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('这是 Custoria.xyz 的产品交互预览。连接钱包、链上支付、NFT 铸造和质押操作暂未启用。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('真实交易需等待钱包、订单合约、销毁视频审核与 NFT 铸造机制接入。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('真实交易需在售出后提交销毁视频，由系统管理员审核通过后生成 NFT；本页面藏品图片仅作界面示意。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('正式商品上架时由卖家提交')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('值得收藏。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('质押模型')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('质押权重试算')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('质押与奖励')",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('重置')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('铸造 NFT & 永久上链')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('状态清晰可见')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('资料审核')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('Genesis 与凭证 NFT')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('Item NFT 与交易历史')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t('TRF、NFT 与实体商品的具体关系以正式用户协议和订单规则为准。任何奖励均受真实平台收入与治理预算约束，不构成固定收益或投资回报承诺。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t(category)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t(selectedCategory === '我的收藏' ? '点击藏品图片上的心形图标，即可加入本地收藏。' : '试试另一个关键词，或切换到全部藏品。')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t(selectedCategory === '我的收藏' ? '还没有收藏藏品' : '没有找到相关藏品')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "toastMessage",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "tokenAddress",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "activeListing.creditUrl",
+        "count": 1
+      },
+      {
+        "kind": "model",
+        "expr": "memberPass",
+        "count": 1
+      },
+      {
+        "kind": "model",
+        "expr": "query",
+        "count": 1
+      },
+      {
+        "kind": "model",
+        "expr": "rewardAmount",
+        "count": 2
+      },
+      {
+        "kind": "model",
+        "expr": "sortOrder",
+        "count": 1
+      },
+      {
+        "kind": "text",
+        "expr": "t('公开批准\\n社区预算').replace(/\\n/g, '<br />')",
+        "count": 1
+      },
+      {
+        "kind": "text",
+        "expr": "t('已实现\\n交易手续费').replace(/\\n/g, '<br />')",
+        "count": 1
+      },
+      {
+        "kind": "text",
+        "expr": "t('质押者\\n按权重分享').replace(/\\n/g, '<br />')",
+        "count": 1
+      }
+    ],
+    "events": [
+      {
+        "event": "click",
+        "handler": "closeDialogs",
+        "count": 5
+      },
+      {
+        "event": "click",
+        "handler": "copyTokenAddress",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "dialogTab = 'item'",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "dialogTab = 'proof'",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "mobileMenuOpen = !mobileMenuOpen",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "notify(t('藏品图片摄影与许可信息已列在每件商品详情中'))",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "notify(t('代币初始分配与解锁计划均为白皮书建议模型'))",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "notify(t('预览完成：尚未签名、扣款或提交订单'))",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "notify(t('质押与奖励采用动态参数，详见 WHITEPAPER.md 第 5 节'))",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "openListing(item)",
+        "count": 2
+      },
+      {
+        "event": "click",
+        "handler": "rewardAmount = 2500",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "rewardLock = lock.days",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "scrollToSection('路线图')",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "scrollToSection('market')",
+        "count": 5
+      },
+      {
+        "event": "click",
+        "handler": "scrollToSection('protocol')",
+        "count": 5
+      },
+      {
+        "event": "click",
+        "handler": "scrollToSection('rewards')",
+        "count": 3
+      },
+      {
+        "event": "click",
+        "handler": "scrollToSection('roadmap')",
+        "count": 2
+      },
+      {
+        "event": "click",
+        "handler": "scrollToSection('top')",
+        "count": 2
+      },
+      {
+        "event": "click",
+        "handler": "selectedCategory = '全部藏品'; query = ''",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "selectedCategory = category",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "showCheckout = false",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "showCheckout = true",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "showSellerPanel = true",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "showWalletPanel = true",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "showWalletPanel = true; mobileMenuOpen = false",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "toastMessage = ''",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "toggleFavorite(activeListing.id)",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "toggleFavorite(item.id)",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "toggleLocale",
+        "count": 1
+      }
+    ],
+    "links": [
+      {
+        "kind": "href",
+        "target": "#market",
+        "count": 3
+      },
+      {
+        "kind": "href",
+        "target": "#protocol",
+        "count": 4
+      },
+      {
+        "kind": "href",
+        "target": "#rewards",
+        "count": 3
+      },
+      {
+        "kind": "href",
+        "target": "#roadmap",
+        "count": 3
+      },
+      {
+        "kind": "href",
+        "target": "#top",
+        "count": 2
+      },
+      {
+        "kind": "href",
+        "target": "https://commons.wikimedia.org/wiki/File:Dunny_vinyl_figure_which_portrays_a_dragon_embroidered_on_a_silk_brocade_door_valance_and_side_panels_(Chinese,_17th-18th_century)_in_The_MET_collection.jpg",
+        "count": 1
+      },
+      {
+        "kind": "href",
+        "target": "https://commons.wikimedia.org/wiki/File:HOOTLUM_vinyl_art_figure_(white_edition).jpg",
+        "count": 1
+      },
+      {
+        "kind": "href",
+        "target": "https://commons.wikimedia.org/wiki/File:KanColle_Nendoroid_-_Kirishima.jpg",
+        "count": 1
+      },
+      {
+        "kind": "href",
+        "target": "https://commons.wikimedia.org/wiki/File:Molly_(art_toy).jpg",
+        "count": 1
+      },
+      {
+        "kind": "href",
+        "target": "https://commons.wikimedia.org/wiki/File:Nendoroid_Collection.jpg",
+        "count": 1
+      },
+      {
+        "kind": "href",
+        "target": "https://x.com/Custoria",
+        "count": 1
+      }
+    ],
+    "assets": [
+      {
+        "kind": "src",
+        "value": "/brand/logo.svg",
+        "count": 5
+      },
+      {
+        "kind": "src",
+        "value": "/images/collectibles/dragon.jpg",
+        "count": 2
+      }
+    ],
+    "forms": [
+      {
+        "tag": "input",
+        "name": "",
+        "type": "number",
+        "count": 1
+      },
+      {
+        "tag": "input",
+        "name": "",
+        "type": "range",
+        "count": 1
+      },
+      {
+        "tag": "input",
+        "name": "",
+        "type": "search",
+        "count": 1
+      },
+      {
+        "tag": "select",
+        "name": "",
+        "type": "",
+        "count": 2
+      }
+    ],
+    "i18n": [],
+    "i18nKeys": [],
+    "i18nFiles": [],
+    "api": [],
+    "env": []
+  },
+  "contentContractHash": "5d336251dc521412913ddd8cec9b68b547eca5b86a742dd6c94bbe43e01ddd6a"
+}

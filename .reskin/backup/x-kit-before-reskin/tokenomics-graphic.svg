@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Custoria TRF fair launch model</title>
+  <desc id="desc">One billion TRF fair launched on Pump, with Dev holdings sent to a black-hole address and operations funded by token and app fees.</desc>
+  <defs>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#19232D" stroke-width="1"/></pattern>
+    <linearGradient id="rail" x1="0" x2="1"><stop stop-color="#55E6D6"/><stop offset="1" stop-color="#B7F34B"/></linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1600" height="900" fill="#0B0D12"/><rect width="1600" height="900" fill="url(#grid)" opacity=".58"/>
+  <text x="84" y="76" fill="#55E6D6" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="5">CUSTORIA  /  TOKENOMICS NOTE 001</text>
+  <text x="84" y="148" fill="#F2F4F8" font-family="Inter,Arial,sans-serif" font-size="60" font-weight="750">FAIR LAUNCH. CLEAR RAILS.</text>
+  <text x="84" y="198" fill="#9AA5B5" font-family="Inter,Arial,sans-serif" font-size="21" letter-spacing="1">$TRF has one fixed supply and two operating fee sources.</text>
+  <g transform="translate(84 270)">
+    <rect width="540" height="430" rx="18" fill="#111A23" stroke="#334551" stroke-width="2"/>
+    <text x="32" y="47" fill="#9AA5B5" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">TOTAL SUPPLY</text>
+    <text x="32" y="120" fill="#F2F4F8" font-family="Inter,Arial,sans-serif" font-size="52" font-weight="750">1,000,000,000</text>
+    <text x="34" y="157" fill="#B7F34B" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="4">TRF</text>
+    <rect x="32" y="190" width="476" height="10" rx="5" fill="#263540"/><rect x="32" y="190" width="476" height="10" rx="5" fill="url(#rail)" filter="url(#glow)"/>
+    <text x="32" y="244" fill="#55E6D6" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="800">PUMP FAIR LAUNCH</text>
+    <text x="32" y="278" fill="#DDE6EC" font-family="Inter,Arial,sans-serif" font-size="17">Same public launch rules for every buyer.</text>
+    <line x1="32" y1="310" x2="508" y2="310" stroke="#2C3B47"/>
+    <text x="32" y="351" fill="#FF6B4A" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="800">DEV HOLDINGS -&gt; BLACK HOLE</text>
+    <text x="32" y="385" fill="#FFB6A4" font-family="Inter,Arial,sans-serif" font-size="16">Dev-held tokens are sent to an unrecoverable address.</text>
+  </g>
+  <g transform="translate(690 270)">
+    <text x="0" y="0" fill="#9AA5B5" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">OPERATING REVENUE</text>
+    <g transform="translate(0 38)"><rect width="826" height="135" rx="16" fill="#122B31" stroke="#55E6D6" stroke-width="2"/><circle cx="68" cy="68" r="35" fill="#55E6D6"/><path d="M68 48v40M50 68h36" stroke="#071312" stroke-width="6" stroke-linecap="round"/><text x="130" y="57" fill="#55E6D6" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="800" letter-spacing="3">RAIL 01</text><text x="130" y="94" fill="#F2F4F8" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="750">Token buy / sell fees</text></g>
+    <g transform="translate(0 203)"><rect width="826" height="135" rx="16" fill="#242037" stroke="#8A7CFF" stroke-width="2"/><circle cx="68" cy="68" r="35" fill="#8A7CFF"/><path d="M50 58h36M50 72h36M50 86h23" stroke="#100E1D" stroke-width="6" stroke-linecap="round"/><text x="130" y="57" fill="#BDAFFF" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="800" letter-spacing="3">RAIL 02</text><text x="130" y="94" fill="#F2F4F8" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="750">Application fees</text></g>
+    <path d="M412 360v55" stroke="url(#rail)" stroke-width="6" stroke-linecap="round" filter="url(#glow)"/><path d="M399 400l13 17 13-17" fill="none" stroke="#DCE5ED" stroke-width="4"/>
+    <rect y="420" width="826" height="112" rx="16" fill="#253017" stroke="#B7F34B" stroke-width="2"/><text x="30" y="462" fill="#B7F34B" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="800" letter-spacing="3">FUNDING PRINCIPLE</text><text x="30" y="500" fill="#F1FFD0" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700">Operations and rewards use realized fees.</text>
+  </g>
+  <text x="84" y="850" fill="#6F7F8E" font-family="Inter,Arial,sans-serif" font-size="14" letter-spacing="2">FIXED SUPPLY  /  PUBLIC FAIR LAUNCH  /  DEV HOLDINGS BURNED</text>
+  <text x="1516" y="850" text-anchor="end" fill="#6F7F8E" font-family="Inter,Arial,sans-serif" font-size="14" letter-spacing="2">NO PRICE OR RETURN PROMISE</text>
+</svg>
