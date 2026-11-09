@@ -364,7 +364,7 @@ def first_tweet():
         parts.append(mono(x + 28, 726, title, 16, ACCENT_SAFE, 700, spacing=3))
         parts.append(t(x + 28, 754, desc, 17, MUTED))
 
-    parts.append(footer(w, "VERIFIED COLLECTIBLE TRADES ON SOLANA", "CUSTORIA.XYZ"))
+    parts.append(footer(w, "VERIFIED COLLECTIBLE TRADES ON SOLANA", "CUSTORIA.TOP"))
     parts.append(bubble(1450, 700, 190, 0.45))
     parts.append(bubble(1540, 420, 70, 0.4))
     parts.append("</svg>")
@@ -375,7 +375,7 @@ def banner():
     w, h = 1500, 500
     parts = [head(
         "Custoria X banner",
-        "The Custoria X header banner: the pink bubble mark, the custoria.xyz wordmark and the line Real collectibles, on-chain proof, with escrow, Item NFT and Trade Proof pills.",
+        "The Custoria X header banner: the pink bubble mark, the custoria.top wordmark and the line Real collectibles, on-chain proof, with escrow, Item NFT and Trade Proof pills.",
         w, h,
     )]
     parts.append(mark(420, 108, 120))

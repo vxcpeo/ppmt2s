@@ -1,6 +1,6 @@
-# Custoria.xyz website
+# Custoria.top website
 
-Vue 3 + Vite prototype for the Custoria.xyz collector marketplace, based on `../WHITEPAPER.md`.
+Vue 3 + Vite prototype for the Custoria.top collector marketplace, based on `../WHITEPAPER.md`.
 
 ## Run locally
 
@@ -17,7 +17,7 @@ Run the production build with `npm run build`. Run Vue's template type check wit
 - Wallet connection, escrow, NFT issuance, staking, membership passes, governance, and prize draws are not connected to contracts or live services.
 - The planned sale lifecycle is: after a sale, the seller records and submits a video showing the physical item being destroyed; a system administrator reviews the video and order; approval mints the Item NFT into escrow, and the Trade Proof NFT is minted after the dispute window. Both credentials are preserved permanently on-chain. This lifecycle is represented in the UI as a design draft and is not enabled.
 - Staking weight multipliers, fee rates, epoch lengths, token supply, and allocations are proposed whitepaper parameters. No fixed APY or investment return is promised.
-- Custoria.xyz is an independent marketplace, not a brand's official store or licensed channel. Item NFTs describe platform records and do not convey brand intellectual property.
+- Custoria.top is an independent marketplace, not a brand's official store or licensed channel. Item NFTs describe platform records and do not convey brand intellectual property.
 
 ## Demo photography
 

@@ -4,10 +4,10 @@
       <aside class="cx-rail">
         <div class="cx-rail-inner">
           <div class="cx-brand-row">
-            <a class="cx-brand" href="#top" :aria-label="`Custoria.xyz ${t('首页')}`" @click.prevent="scrollToSection('top')">
+            <a class="cx-brand" href="#top" :aria-label="`Custoria.top ${t('首页')}`" @click.prevent="scrollToSection('top')">
               <img class="cx-brand-mark" src="/brand/logo.svg" alt="" />
               <span class="cx-brand-text">
-                <span class="cx-wordmark">custoria<span class="cx-wordmark-zone">.xyz</span></span>
+                <span class="cx-wordmark">custoria<span class="cx-wordmark-zone">.top</span></span>
                 <span class="cx-motto">COLLECT WITH CONTEXT.</span>
               </span>
             </a>
@@ -51,9 +51,9 @@
               <button class="cx-btn" type="button" @click="showSellerPanel = true">{{ t('成为卖家') }} <Plus :size="13" /></button>
               <button class="cx-btn cx-btn-primary" type="button" @click="showWalletPanel = true"><WalletCards :size="15" />{{ t('连接钱包') }}</button>
             </div>
-            <a class="cx-xlink" href="https://x.com/Custoria" target="_blank" rel="noreferrer" aria-label="Follow Custoria on X">
+            <a class="cx-xlink" href="https://x.com/custoria_top" target="_blank" rel="noreferrer" aria-label="Follow @custoria_top on X">
               <X :size="14" stroke-width="2.5" />
-              <span>FOLLOW @CUSTORIA ON X</span>
+              <span>FOLLOW @CUSTORIA_TOP ON X</span>
               <ExternalLink :size="10" />
             </a>
             <ul class="cx-trust">
@@ -448,10 +448,10 @@
 
       <footer class="cx-foot">
         <div>
-          <a class="cx-foot-brand" href="#top" aria-label="Custoria.xyz" @click.prevent="scrollToSection('top')">
+          <a class="cx-foot-brand" href="#top" aria-label="Custoria.top" @click.prevent="scrollToSection('top')">
             <img class="cx-foot-mark" src="/brand/logo.svg" alt="" />
             <span class="cx-brand-text">
-              <span class="cx-wordmark">custoria<span class="cx-wordmark-zone">.xyz</span></span>
+              <span class="cx-wordmark">custoria<span class="cx-wordmark-zone">.top</span></span>
               <span class="cx-motto">COLLECT WITH CONTEXT.</span>
             </span>
           </a>
@@ -464,7 +464,7 @@
           </div>
         </div>
         <div class="cx-foot-aside">
-          <div class="cx-foot-legal"><span>© 2026 Custoria.xyz · Independent collector marketplace</span><span>{{ t('不是任何商品品牌的官方商城或授权销售渠道。') }}</span></div>
+          <div class="cx-foot-legal"><span>© 2026 Custoria.top · Independent collector marketplace</span><span>{{ t('不是任何商品品牌的官方商城或授权销售渠道。') }}</span></div>
           <div class="cx-foot-disclaimer"><Info :size="12" /><span>{{ t('TRF、NFT 与实体商品的具体关系以正式用户协议和订单规则为准。任何奖励均受真实平台收入与治理预算约束，不构成固定收益或投资回报承诺。') }}</span></div>
           <div class="cx-foot-credits">
             <span>{{ t('演示图片来源与许可：') }}</span>
@@ -587,7 +587,7 @@
             <button class="cx-dialog-close" type="button" :aria-label="t('关闭')" @click="closeDialogs"><X :size="18" /></button>
           </div>
           <h2 id="wallet-dialog-title">{{ t('钱包接入尚在规划。') }}</h2>
-          <p class="cx-sheet-lede">{{ t('这是 Custoria.xyz 的产品交互预览。连接钱包、链上支付、NFT 铸造和质押操作暂未启用。') }}</p>
+          <p class="cx-sheet-lede">{{ t('这是 Custoria.top 的产品交互预览。连接钱包、链上支付、NFT 铸造和质押操作暂未启用。') }}</p>
           <div class="cx-network"><span class="cx-network-led" aria-hidden="true"></span>{{ t('目标网络') }} <strong>Solana</strong><span class="cx-network-dev">{{ t('待集成') }}</span></div>
           <button class="cx-btn cx-btn-primary cx-sheet-cta" type="button" @click="closeDialogs">{{ t('返回浏览') }} <ArrowRight :size="15" /></button>
         </section>

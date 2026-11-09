@@ -18,7 +18,7 @@
       "count": 1
     },
     {
-      "value": "© 2026 Custoria.xyz · Independent collector marketplace",
+      "value": "© 2026 Custoria.top · Independent collector marketplace",
       "count": 1
     },
     {
@@ -138,7 +138,7 @@
       "count": 1
     },
     {
-      "value": "FOLLOW @CUSTORIA ON X",
+      "value": "FOLLOW @CUSTORIA_TOP ON X",
       "count": 1
     },
     {
@@ -321,7 +321,7 @@
     },
     {
       "name": "href",
-      "value": "https://x.com/Custoria",
+      "value": "https://x.com/custoria_top",
       "count": 1
     },
     {
@@ -1433,7 +1433,7 @@
     },
     {
       "kind": "interpolation",
-      "expr": "t('这是 Custoria.xyz 的产品交互预览。连接钱包、链上支付、NFT 铸造和质押操作暂未启用。')",
+      "expr": "t('这是 Custoria.top 的产品交互预览。连接钱包、链上支付、NFT 铸造和质押操作暂未启用。')",
       "count": 1
     },
     {
@@ -1772,7 +1772,7 @@
     },
     {
       "kind": "href",
-      "target": "https://x.com/Custoria",
+      "target": "https://x.com/custoria_top",
       "count": 1
     }
   ],

@@ -1,4 +1,4 @@
-# Reskin wireframe — Custoria.xyz / Split Stage + Bubblegum Exchange
+# Reskin wireframe — Custoria.top / Split Stage + Bubblegum Exchange
 
 Committed direction (from `.reskin/STYLE.md`): **Split Stage** (spatial) with the **Bubblegum Exchange**
 design DNA. Original shell was `terminal-console` (dark navy technical console with a left command rail and
@@ -11,7 +11,7 @@ div.cx-app
   div.cx-page                      [2-col grid: minmax(300px,42fr) / minmax(0,58fr)]
     aside.cx-rail                  sticky narrative column, own scroll on short screens
       div.cx-rail-inner            sticky top:0, min-height:100svh, flex column
-        div.cx-brand               logo + custoria.xyz + COLLECT WITH CONTEXT.
+        div.cx-brand               logo + custoria.top + COLLECT WITH CONTEXT.
         p.cx-status                Product preview · Market prototype / Wallet… / See how it works
         p.cx-thesis                THE NEXT STOP FOR COLLECTORS · ON SOLANA
         a.cx-rail-cta              Explore collectibles  → #market

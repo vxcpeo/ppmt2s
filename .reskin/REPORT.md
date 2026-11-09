@@ -1,4 +1,4 @@
-# Reskin report — custoria.xyz
+# Reskin report — custoria.top
 
 The UI was rebuilt around **Bubblegum Exchange** / **Split Stage**; the original **terminal-console**
 shell and palette were removed while the content contract stayed byte-for-byte intact.
@@ -149,7 +149,7 @@ resolved by re-drawing the same identity (a “C” arc plus a bubble dot) in th
 |---|---|
 | `public/brand/logo.svg` (800×800) | pink gradient rounded square, white C arc, bubble dots |
 | `public/brand/logo.png` (800×800, transparent) | rendered from the SVG in real Chrome |
-| `public/brand/logo-lockup.svg` (1200×400) | mark + `custoria.xyz` wordmark + `COLLECT WITH CONTEXT.` |
+| `public/brand/logo-lockup.svg` (1200×400) | mark + `custoria.top` wordmark + `COLLECT WITH CONTEXT.` |
 | `index.html` | `theme-color` `#071a33` → `#e6006f` (title, description, language and icon unchanged) |
 
 Backups of the previous assets: `.reskin/backup/brand-before-reskin/`. The mark is re-used inside the
