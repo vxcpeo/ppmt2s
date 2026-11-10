@@ -1,64 +1,67 @@
-# Reskin wireframe — Custoria.top / Split Stage + Bubblegum Exchange
+# Reskin wireframe — Keepora.xyz
 
-Committed direction (from `.reskin/STYLE.md`): **Split Stage** (spatial) with the **Bubblegum Exchange**
-design DNA. Original shell was `terminal-console` (dark navy technical console with a left command rail and
-a single scrolling deck); it is gone from the render path.
+Direction (fixed by `.reskin/STYLE.md`): **Cosmos Orbit** (`cosmos-orbit`, spatial-futurist) with the
+**Gallery Scroll** skeleton (`gallery-scroll`). Original archetype: `sidebar-workspace` (shell).
 
-## Shell
+## 1. New shell
+
+Name: **Orbit Stage** (`orb-*` namespace, token names `--orb-*`).
 
 ```
-div.cx-app
-  div.cx-page                      [2-col grid: minmax(300px,42fr) / minmax(0,58fr)]
-    aside.cx-rail                  sticky narrative column, own scroll on short screens
-      div.cx-rail-inner            sticky top:0, min-height:100svh, flex column
-        div.cx-brand               logo + custoria.top + COLLECT WITH CONTEXT.
-        p.cx-status                Product preview · Market prototype / Wallet… / See how it works
-        p.cx-thesis                THE NEXT STOP FOR COLLECTORS · ON SOLANA
-        a.cx-rail-cta              Explore collectibles  → #market
-        nav.cx-index               vertical numbered index 01–04 (4 routes)
-        div.cx-mint                PROTOTYPE MINT SOLANA + address + COPY
-        div.cx-rail-foot           locale toggle · Become a seller · Connect wallet · X follow
-        ul.cx-trust                3 principle pills
-    main.cx-stage #top             scrolling data stage
-      section.cx-hero              eyebrow / h1 / lede / How trading works / featured lot card
-      section.cx-band              3 annotated rows (platform principles)
-      section.cx-market #market    pill filters + search/sort toolbar + lot ledger + footnote
-      section.cx-proof #protocol   tinted proof band: 01–03 stage ledger + item ticket + escrow chain
-      section.cx-rewards #rewards  staking sandbox card + signal/orb diagram + formula + disclosure
-      section.cx-supply #tokenomics  supply headline + allocation <table> with proportion bars
-      section.cx-plan #roadmap     phase ledger rows
-      section.cx-cta               pink gradient prompt panel
-    footer.cx-foot                 full-width band below the split: brand, links, legal, credits
+div.orb-root
+  span.orb-sky (star field, aria-hidden) · span.orb-aura ×2 (radial glows)
+  div.orb-hud        fixed top-right utility capsule: locale · Become a seller · Connect wallet
+  main#top.orb-flow  scroll-snap river of full-viewport scenes
+    section.orb-scene.orb-cover     01 cover: lockup + status + headline + 2 actions + feature plate + telemetry
+    section.orb-scene.orb-facts     02 principles: three "constellation" facts on one hairline
+    section#market.orb-scene        03 market: head + filter/tool bar + horizontal lot rail + note
+    section#protocol.orb-scene      04 protocol: head + 3 orbit stations + passport + chain rail
+    section#rewards.orb-scene       05 rewards: head + lab (calc + orbit figure) + explainer + disclosure
+    section#tokenomics.orb-scene    06 tokenomics: head + giant total + allocation ledger + foot
+    section#roadmap.orb-scene       07 roadmap: head + vertical phase orbit
+    section.orb-scene.orb-close     08 close: orb mark + statement + CTA + trust marks + follow
+  footer.orb-foot    band: brand · line · links · legal · disclaimer · credits
+  nav.orb-dock       fixed bottom dock: 4 route links (icons + labels) + menu toggle
+  nav.orb-sheet      v-if mobileMenuOpen: 4 route links + Connect wallet (unchanged v-if branch)
+  dialogs: orb-dialog (item / checkout), orb-sheet-panel ×2 (seller, wallet), orb-toast
 ```
 
-Landmarks: `aside` (complementary) → `nav` → `main` → `footer`. No top navigation bar; the index lives in
-the sticky column and becomes a horizontal scroll strip ≤1024px.
+Landmark order becomes `main → footer → nav(dock)`; the original `aside → nav → main → footer`
+no longer exists.
 
-## Route `/` composition (content moved, never rewritten)
+## 2. Route map (single route `/`)
 
-| Existing region | New region |
+| Region | Content it holds (all moved, never retyped) |
 |---|---|
-| status bar 46px + top nav + left command rail | sticky 42% narrative column: brand, index, thesis, CTA, mint, footer actions |
-| hero copy + inspector card | stage hero: h1/lede + `How trading works`, then a feature lot card (photo + spec table) |
-| 3 numbered readout rows | horizontal hairline band with `01–03` mono numerals |
-| console with category rail + ledger rows | market: pill filter row, toolbar, 5 lot rows (thumb, body, meta, price) |
-| 3 stage cards + passport aside + escrow row | proof band: numbered vertical stage ledger, item ticket, wrapped escrow chain |
-| calculator + orbit + explainer + disclosure | sandbox card, orb/nodes signal diagram, formula strip, disclosure bar |
-| supply headline + allocation table | supply panel: oversized total + table with proportion bars + foot |
-| 4 phase cards | phase ledger rows with a vertical hairline |
-| prompt bar | pink gradient CTA panel |
-| 4-row hint bar | full-width footer band |
+| `orb-cover` | lockup/wordmark/motto, prototype status, headline, lede, Explore collectibles + How trading works, feature plate (photo, chips, tag, specs, fine print), PROSTOTYPE MINT strip + COPY |
+| `orb-facts` | the 3 principle rows (01–03 key + text) |
+| `orb-market` | section head + photo-source note, category tablist, search/sort, 5-lot snap rail, demo footnote |
+| `orb-protocol` | section head + draft pill, 3 station rows, Item Passport article, 6-node escrow chain |
+| `orb-rewards` | section head + pill, sandbox calculator, orbit signal figure, explainer + formula, disclosure |
+| `orb-tokenomics` | section head, oversized total, 6-row allocation table, lock/multisig foot |
+| `orb-roadmap` | section head + DRAFT pill, 4 phase rows |
+| `orb-close` | A MARKET BUILT FOR COLLECTORS, closing statement, Explore the demo market, 3 trust marks, FOLLOW @KEEPORA ON X |
+| `orb-foot` | brand lockup, Solana resale line, 4 links, legal, disclaimer, 5 photo credits |
+| `orb-hud` | locale toggle, Become a seller, Connect wallet |
+| `orb-dock` | Collectibles market · Trade protection · Staking & rewards · Roadmap + menu toggle |
+| `orb-sheet` | same 4 links + Connect wallet (existing `mobileMenuOpen` branch) |
 
-## Tokens and breakpoints
+## 3. Deleted vs kept
 
-Tokens come from `.reskin/style.json` (`--bg #FFFFFF`, `--accent #E6006F`, `--accent-safe #C2005D`,
-`--accent-2 #FF4DA6`, radii 12/22/32, Avenir Next + Cascadia Mono, 200ms ease). Breakpoints: 1280 (rail
-padding), 1100 (proof two-up → stacked), 1024 (split collapses, rail becomes a header + horizontal index
-strip), 860 (ledger rows re-flow), 720 (single column, dialogs full-height), 460 (compact type).
+- Deleted from the render path: the whole `cx-*` shell — `cx-app/cx-page/cx-rail/cx-stage/cx-hero/
+  cx-band/cx-section/cx-proof/cx-rewards/cx-supply/cx-cta/cx-foot/cx-dialog/cx-sheet/cx-toast` and the
+  sticky 40/60 split, the numbered vertical index, the card grid, the ticket card and the table skin.
+- Kept as content-only children: every text element, `img`, form control, `v-for`, `v-if`, `v-html`,
+  `v-model`, `@click`/`@keydown` handler, route href and dialog branch, with the original expressions
+  copied verbatim.
+- `<script setup>` is untouched.
 
-## Deleted from the render path
+## 4. New presentation layer
 
-`src/style.css` (78KB, `sg-*` tokens) is replaced by `src/styles/cx.css` with a fresh token set and
-`cx-*` classes; all `sg-*` class names, `.sg-rail`, `.sg-statusbar`, `.sg-deck`, `.sg-console`,
-`.sg-passport`, `.sg-overlay` and the old palette are removed from the DOM. `<script setup>` stays
-byte-identical: no data, handler, binding, i18n value or route changes.
+- `src/styles/orbit.css` — tokens (`--orb-*`), reset/base type, star field, scene rhythm, dock, HUD,
+  rails, dialogs, responsive, reduced-motion. Imported from `src/main.js`; `cx.css` leaves the render path.
+- Breakpoints: 1280 (scene padding), 1080 (two-column scenes stack), 900 (rail cards 78vw), 720 (dock
+  compacts, HUD shrinks), 520 (single column, full-height sheets).
+- Tokens: ground `#05060B`, surfaces `#0D0F1A`/`#12141F`, ink `#F4F5FA`, muted `#9A9DB2`,
+  accent `#40B3FF`, accent-2 `#A78BFA`, line `rgba(255,255,255,.10)`; radii 999px / 28px; display
+  `Century Gothic, Futura, Segoe UI`, mono `Cascadia Mono`.

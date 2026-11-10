@@ -4,6 +4,7 @@
 # Historical brands (0..n)
 history: Tracefolio
 history: Tracevio
+history: Custoria
 
 # Current brand (exactly one)
-current: Custoria
+current: Keepora

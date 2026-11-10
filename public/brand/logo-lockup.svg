@@ -1,17 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
-  <title id="title">Custoria wordmark</title>
-  <desc id="desc">The Custoria bubble mark with the custoria.top wordmark and the tagline Collect with context.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="Keepora lockup">
+  <title>Keepora lockup</title>
   <defs>
-    <linearGradient id="cxLockGradient" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FF6FB5"/>
-      <stop offset="0.55" stop-color="#E6006F"/>
-      <stop offset="1" stop-color="#A80050"/>
+    <linearGradient id="kl-tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#122036"/>
+      <stop offset="1" stop-color="#05060B"/>
     </linearGradient>
+    <linearGradient id="kl-edge" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#A78BFA"/>
+      <stop offset="0.55" stop-color="#7FD4FF"/>
+      <stop offset="1" stop-color="#40B3FF"/>
+    </linearGradient>
+    <radialGradient id="kl-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#40B3FF" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#40B3FF" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect x="26" y="54" width="292" height="292" rx="86" fill="url(#cxLockGradient)"/>
-  <path d="M234 158a68 68 0 1 0 0 84" fill="none" stroke="#FFFFFF" stroke-width="33" stroke-linecap="round"/>
-  <circle cx="271" cy="132" r="11.5" fill="#FFFFFF" opacity="0.94"/>
-  <circle cx="313" cy="95" r="5.5" fill="#FFD1E2" opacity="0.9"/>
-  <text x="376" y="216" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="92" font-weight="700" letter-spacing="-2">custoria<tspan fill="#C2005D" font-size="44" font-weight="600" letter-spacing="0">.top</tspan></text>
-  <text x="380" y="266" fill="#6D6A70" font-family="SFMono-Regular,Cascadia Mono,Consolas,monospace" font-size="17" letter-spacing="4.5">COLLECT WITH CONTEXT.</text>
+  <g transform="translate(40,40) scale(0.4)">
+    <rect width="800" height="800" rx="200" fill="url(#kl-tile)"/>
+    <circle cx="400" cy="400" r="300" fill="url(#kl-glow)"/>
+    <circle cx="400" cy="400" r="296" fill="none" stroke="#F4F5FA" stroke-opacity="0.14" stroke-width="8"/>
+    <path d="M 668 275 A 296 296 0 1 1 122 299" fill="none" stroke="url(#kl-edge)" stroke-width="12" stroke-linecap="round" stroke-opacity="0.92"/>
+    <path d="M 310 272 L 310 528" fill="none" stroke="#F4F5FA" stroke-width="54" stroke-linecap="round"/>
+    <path d="M 500 272 L 382 404" fill="none" stroke="url(#kl-edge)" stroke-width="54" stroke-linecap="round"/>
+    <path d="M 382 404 L 516 528" fill="none" stroke="#F4F5FA" stroke-width="54" stroke-linecap="round"/>
+    <circle cx="668" cy="275" r="44" fill="none" stroke="#A78BFA" stroke-opacity="0.35" stroke-width="4"/>
+    <circle cx="668" cy="275" r="24" fill="#A78BFA"/>
+  </g>
+  <text x="400" y="196" font-family="Century Gothic, Futura, Segoe UI, Arial, sans-serif" font-size="86" fill="#F4F5FA" letter-spacing="-1">keepora<tspan fill="#40B3FF">.xyz</tspan></text>
+  <text x="402" y="252" font-family="Cascadia Mono, Consolas, monospace" font-size="22" fill="#9A9DB2" letter-spacing="7">COLLECT WITH CONTEXT.</text>
 </svg>

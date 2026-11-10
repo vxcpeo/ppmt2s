@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "meta": {
-    "projectName": "custoria-website",
-    "title": "custoria-website",
+    "projectName": "keepora-website",
+    "title": "keepora-website",
     "lang": "en"
   },
   "routes": [
@@ -18,7 +18,7 @@
       "count": 1
     },
     {
-      "value": "© 2026 Custoria.top · Independent collector marketplace",
+      "value": "© 2026 Keepora.xyz · Independent collector marketplace",
       "count": 1
     },
     {
@@ -114,10 +114,6 @@
       "count": 1
     },
     {
-      "value": "custoria",
-      "count": 2
-    },
-    {
       "value": "DEMO ITEM /",
       "count": 1
     },
@@ -138,7 +134,7 @@
       "count": 1
     },
     {
-      "value": "FOLLOW @CUSTORIA_TOP ON X",
+      "value": "FOLLOW @KEEPORA ON X",
       "count": 1
     },
     {
@@ -168,6 +164,10 @@
     {
       "value": "ITEM PHOTO",
       "count": 1
+    },
+    {
+      "value": "keepora",
+      "count": 2
     },
     {
       "value": "Molly · CC0",
@@ -266,7 +266,7 @@
   "attributes": [
     {
       "name": "alt",
-      "value": "Custoria proof mark",
+      "value": "Keepora proof mark",
       "count": 1
     },
     {
@@ -321,7 +321,7 @@
     },
     {
       "name": "href",
-      "value": "https://x.com/custoria_top",
+      "value": "https://x.com/keepora",
       "count": 1
     },
     {
@@ -1433,7 +1433,7 @@
     },
     {
       "kind": "interpolation",
-      "expr": "t('这是 Custoria.top 的产品交互预览。连接钱包、链上支付、NFT 铸造和质押操作暂未启用。')",
+      "expr": "t('这是 Keepora.xyz 的产品交互预览。连接钱包、链上支付、NFT 铸造和质押操作暂未启用。')",
       "count": 1
     },
     {
@@ -1772,7 +1772,7 @@
     },
     {
       "kind": "href",
-      "target": "https://x.com/custoria_top",
+      "target": "https://x.com/keepora",
       "count": 1
     }
   ],

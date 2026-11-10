@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Keepora physical to NFT</title>
+  <desc id="desc">A Keepora flow graphic: a physical collectible moves through escrow to an Item NFT and a Trade Proof NFT on Solana, with the headline Real collectibles, on-chain proof.</desc>
+  <defs>
+    <radialGradient id="glowA" cx="0.12" cy="0.02" r="0.72">
+      <stop offset="0" stop-color="#FFD7E8" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FFD7E8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.96" cy="0.98" r="0.72">
+      <stop offset="0" stop-color="#FFE9D6" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#FFE9D6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pinkGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF6FB5"/>
+      <stop offset="0.55" stop-color="#E6006F"/>
+      <stop offset="1" stop-color="#A80050"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF9CC6"/>
+      <stop offset="1" stop-color="#E6006F"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#140A19" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+  <rect width="1600" height="900" fill="url(#glowA)"/>
+  <rect width="1600" height="900" fill="url(#glowB)"/>
+<rect x="96" y="98" width="46" height="4" rx="2" fill="#E6006F"/><text x="156" y="108" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="17" font-weight="700" text-anchor="start" letter-spacing="4" opacity="1.0">KEEPORA / PHYSICAL FIRST</text>
+<text x="96" y="200" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="66" font-weight="700" text-anchor="start" letter-spacing="-2.2" opacity="1.0">Real collectibles.</text>
+<text x="96" y="272" fill="#C2005D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="66" font-weight="700" text-anchor="start" letter-spacing="-2.2" opacity="1.0">On-chain proof.</text>
+<text x="96" y="320" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="22" font-weight="400" text-anchor="start" opacity="1.0">The object is destroyed on camera; the record stays verifiable.</text>
+<g filter="url(#soft)"><rect x="96" y="372" width="312" height="292" rx="34" fill="#FFFFFF" stroke="#E9E4EB" stroke-width="2.5" opacity="1.0"/></g>
+<circle cx="140" cy="418" r="20" fill="#FFF5F9" stroke="#F7D7E5" stroke-width="2"/>
+<text x="140" y="424" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="15" font-weight="700" text-anchor="middle" opacity="1.0">1</text>
+<text x="174" y="424" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="13" font-weight="600" text-anchor="start" letter-spacing="2.4" opacity="1.0">01 / PHYSICAL</text>
+<text x="124" y="500" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="27" font-weight="700" text-anchor="start" letter-spacing="-0.8" opacity="1.0">Physical item</text>
+<line x1="124" y1="524" x2="380" y2="524" stroke="#E9E4EB" stroke-width="2"/>
+<text x="124" y="560" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" opacity="1.0">Photos, purchase proof and</text>
+<text x="124" y="586" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" opacity="1.0">serial details build the</text>
+<text x="124" y="612" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" opacity="1.0">record.</text>
+<path d="M414 500h22m-8-8 8 8-8 8" fill="none" stroke="#F7D7E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#soft)"><rect x="452" y="372" width="312" height="292" rx="34" fill="#FFFFFF" stroke="#E9E4EB" stroke-width="2.5" opacity="1.0"/></g>
+<circle cx="496" cy="418" r="20" fill="#FFF5F9" stroke="#F7D7E5" stroke-width="2"/>
+<text x="496" y="424" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="15" font-weight="700" text-anchor="middle" opacity="1.0">2</text>
+<text x="530" y="424" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="13" font-weight="600" text-anchor="start" letter-spacing="2.4" opacity="1.0">02 / ESCROW</text>
+<text x="480" y="500" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="27" font-weight="700" text-anchor="start" letter-spacing="-0.8" opacity="1.0">Escrow</text>
+<line x1="480" y1="524" x2="736" y2="524" stroke="#E9E4EB" stroke-width="2"/>
+<text x="480" y="560" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" opacity="1.0">Payment is held by the order</text>
+<text x="480" y="586" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" opacity="1.0">until evidence is reviewed.</text>
+<path d="M770 500h22m-8-8 8 8-8 8" fill="none" stroke="#F7D7E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#soft)"><rect x="808" y="372" width="312" height="292" rx="34" fill="#FFFFFF" stroke="#E9E4EB" stroke-width="2.5" opacity="1.0"/></g>
+<circle cx="852" cy="418" r="20" fill="#FFF5F9" stroke="#F7D7E5" stroke-width="2"/>
+<text x="852" y="424" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="15" font-weight="700" text-anchor="middle" opacity="1.0">3</text>
+<text x="886" y="424" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="13" font-weight="600" text-anchor="start" letter-spacing="2.4" opacity="1.0">03 / ITEM NFT</text>
+<text x="836" y="500" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="27" font-weight="700" text-anchor="start" letter-spacing="-0.8" opacity="1.0">Item NFT</text>
+<line x1="836" y1="524" x2="1092" y2="524" stroke="#E9E4EB" stroke-width="2"/>
+<text x="836" y="560" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" opacity="1.0">Minted into escrow after an</text>
+<text x="836" y="586" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" opacity="1.0">administrator approves the</text>
+<text x="836" y="612" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" opacity="1.0">video.</text>
+<path d="M1126 500h22m-8-8 8 8-8 8" fill="none" stroke="#F7D7E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#soft)"><rect x="1164" y="372" width="312" height="292" rx="34" fill="#FFFFFF" stroke="#E9E4EB" stroke-width="2.5" opacity="1.0"/></g>
+<circle cx="1208" cy="418" r="20" fill="#FFF5F9" stroke="#F7D7E5" stroke-width="2"/>
+<text x="1208" y="424" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="15" font-weight="700" text-anchor="middle" opacity="1.0">4</text>
+<text x="1242" y="424" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="13" font-weight="600" text-anchor="start" letter-spacing="2.4" opacity="1.0">04 / TRADE PROOF</text>
+<text x="1192" y="500" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="27" font-weight="700" text-anchor="start" letter-spacing="-0.8" opacity="1.0">Trade Proof NFT</text>
+<line x1="1192" y1="524" x2="1448" y2="524" stroke="#E9E4EB" stroke-width="2"/>
+<text x="1192" y="560" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" opacity="1.0">Both sides receive a</text>
+<text x="1192" y="586" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" opacity="1.0">non-transferable proof of the</text>
+<text x="1192" y="612" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" opacity="1.0">trade.</text>
+<rect x="96" y="700" width="1408" height="114" rx="30" fill="#0D0D0D" stroke="#0D0D0D" stroke-width="0" opacity="1.0"/>
+<text x="136" y="742" fill="#FF9CC6" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="14" font-weight="700" text-anchor="start" letter-spacing="3.2" opacity="1.0">BEFORE MINT</text>
+<text x="326" y="746" fill="#FFFFFF" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="23" font-weight="600" text-anchor="start" opacity="1.0">Photos + purchase proof + serial record + administrator review.</text>
+<text x="136" y="782" fill="#FF9CC6" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="14" font-weight="700" text-anchor="start" letter-spacing="3.2" opacity="1.0">AFTER RELEASE</text>
+<text x="326" y="786" fill="#FFFFFF" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="23" font-weight="600" text-anchor="start" opacity="1.0">Item NFT in the buyer wallet, Trade Proof NFTs on both sides.</text>
+<line x1="96" y1="840" x2="1504" y2="840" stroke="#E9E4EB" stroke-width="2"/><text x="96" y="876" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="14" font-weight="600" text-anchor="start" letter-spacing="3.2" opacity="1.0">PHYSICAL → ESCROW → BURN VIDEO → REVIEW → MINT</text><text x="1504" y="876" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="14" font-weight="600" text-anchor="end" letter-spacing="3.2" opacity="1.0">INDEPENDENT MARKETPLACE</text>
+<circle cx="1550" cy="110" r="96" fill="none" stroke="#F7D7E5" stroke-width="2.5" opacity="0.45"/>
+</svg>

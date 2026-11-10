@@ -1,17 +1,17 @@
 # Reskin verification — PASS
 
-Generated: 2026-10-21T17:13:17.460Z
+Generated: 2026-11-09T18:32:18.553Z
 
-- Project: **custoria-website**
+- Project: **keepora-website**
 - URL: http://127.0.0.1:4317/
-- Original skeleton: `terminal-console` (linear)
-- New skeleton: `sidebar-workspace` (shell)
-- Accent: #28a0f0 -> #e6006f (99.85 ΔE; min 30)
-- Source contract: intact (`5d336251dc52`)
+- Original skeleton: `sidebar-workspace` (shell)
+- New skeleton: `orbital` (spatial)
+- Accent: #e6006f -> #40b3ff (102.3 ΔE; min 30)
+- Source contract: intact (`0b7b75644502`)
 
 | Route | Result | DOM similarity | Landmark similarity | Axe serious | Screenshot |
 |---|---|---:|---:|---:|---|
-| `/` | PASS | 0.422 | 0.5 | 0 | [desktop](current/home-desktop.png) |
+| `/` | PASS | 0.358 | 0.222 | 0 | [desktop](current/home-desktop.png) |
 
 ## Blocking issues
 

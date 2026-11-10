@@ -1,0 +1,105 @@
+{
+  "results": [
+    {
+      "name": "search filters listings",
+      "ok": true,
+      "detail": "1 lot(s) for \"molly\""
+    },
+    {
+      "name": "sort low-to-high",
+      "ok": true,
+      "detail": "first price 980"
+    },
+    {
+      "name": "favourite toggle",
+      "ok": true,
+      "detail": "1 active heart(s)"
+    },
+    {
+      "name": "toast appears",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "favourites counter updates",
+      "ok": true,
+      "detail": "My favorites 1"
+    },
+    {
+      "name": "item dialog opens",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "proof tab renders history",
+      "ok": true,
+      "detail": "5 step(s)"
+    },
+    {
+      "name": "checkout preview renders",
+      "ok": true,
+      "detail": "Cost breakdown"
+    },
+    {
+      "name": "escape closes dialog",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "seller panel opens",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "wallet panel opens",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "staking sandbox recalculates",
+      "ok": true,
+      "detail": "5,000 w"
+    },
+    {
+      "name": "focus traversal captured",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "locale switches to zh",
+      "ok": true,
+      "detail": "zh"
+    },
+    {
+      "name": "zh has no horizontal overflow",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile dock visible",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile menu opens",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile dialog opens",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile has no horizontal overflow",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no console errors",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "errors": []
+}

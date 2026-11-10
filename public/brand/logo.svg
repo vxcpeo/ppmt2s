@@ -1,15 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
-  <title id="title">Custoria mark</title>
-  <desc id="desc">A pink rounded square holding a white C-shaped arc and two small bubble dots.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Keepora mark: a K inside an orbit ring">
+  <title>Keepora mark</title>
   <defs>
-    <linearGradient id="cxMarkGradient" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FF6FB5"/>
-      <stop offset="0.55" stop-color="#E6006F"/>
-      <stop offset="1" stop-color="#A80050"/>
+    <linearGradient id="kp-tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#122036"/>
+      <stop offset="1" stop-color="#05060B"/>
     </linearGradient>
+    <linearGradient id="kp-edge" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#A78BFA"/>
+      <stop offset="0.55" stop-color="#7FD4FF"/>
+      <stop offset="1" stop-color="#40B3FF"/>
+    </linearGradient>
+    <radialGradient id="kp-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#40B3FF" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#40B3FF" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect x="72" y="72" width="656" height="656" rx="196" fill="url(#cxMarkGradient)"/>
-  <path d="M520 306a150 150 0 1 0 0 188" fill="none" stroke="#FFFFFF" stroke-width="74" stroke-linecap="round"/>
-  <circle cx="602" cy="246" r="26" fill="#FFFFFF" opacity="0.94"/>
-  <circle cx="700" cy="162" r="12" fill="#FFD1E2" opacity="0.9"/>
+  <rect width="800" height="800" rx="200" fill="url(#kp-tile)"/>
+  <circle cx="400" cy="400" r="300" fill="url(#kp-glow)"/>
+  <circle cx="400" cy="400" r="296" fill="none" stroke="#F4F5FA" stroke-opacity="0.14" stroke-width="8"/>
+  <path d="M 668 275 A 296 296 0 1 1 122 299" fill="none" stroke="url(#kp-edge)" stroke-width="12" stroke-linecap="round" stroke-opacity="0.92"/>
+  <path d="M 310 272 L 310 528" fill="none" stroke="#F4F5FA" stroke-width="54" stroke-linecap="round"/>
+  <path d="M 500 272 L 382 404" fill="none" stroke="url(#kp-edge)" stroke-width="54" stroke-linecap="round"/>
+  <path d="M 382 404 L 516 528" fill="none" stroke="#F4F5FA" stroke-width="54" stroke-linecap="round"/>
+  <circle cx="668" cy="275" r="44" fill="none" stroke="#A78BFA" stroke-opacity="0.35" stroke-width="4"/>
+  <circle cx="668" cy="275" r="24" fill="#A78BFA"/>
 </svg>

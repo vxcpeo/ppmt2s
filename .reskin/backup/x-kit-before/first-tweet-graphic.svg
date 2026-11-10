@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Keepora launch graphic</title>
+  <desc id="desc">The Keepora launch image: a pink bubble mark, the wordmark and the headline Real collectibles. On-chain proof. with escrow, seller bonds, Item NFTs and Trade Proof NFTs on Solana.</desc>
+  <defs>
+    <radialGradient id="glowA" cx="0.12" cy="0.02" r="0.72">
+      <stop offset="0" stop-color="#FFD7E8" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FFD7E8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.96" cy="0.98" r="0.72">
+      <stop offset="0" stop-color="#FFE9D6" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#FFE9D6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pinkGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF6FB5"/>
+      <stop offset="0.55" stop-color="#E6006F"/>
+      <stop offset="1" stop-color="#A80050"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF9CC6"/>
+      <stop offset="1" stop-color="#E6006F"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#140A19" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+  <rect width="1600" height="900" fill="url(#glowA)"/>
+  <rect width="1600" height="900" fill="url(#glowB)"/>
+<g transform="translate(96,84) scale(0.145)">  <rect x="72.00" y="72.00" width="656.00" height="656.00" rx="157.44" fill="url(#pinkGrad)"/>
+  <circle cx="583.68" cy="229.44" r="39.36" fill="#ffffff" opacity="0.85"/>
+  <text x="400.00" y="504.96" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="341.12" font-weight="700" fill="#ffffff">K</text></g>
+<text x="228" y="160" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="42" font-weight="700" text-anchor="start" letter-spacing="-1.6" opacity="1.0">keepora</text>
+<text x="230" y="186" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="13" font-weight="600" text-anchor="start" letter-spacing="3.6" opacity="1.0">COLLECT WITH CONTEXT.</text>
+<rect x="1226" y="96" width="278" height="52" rx="26.0" fill="#FFF5F9" stroke="#F7D7E5" stroke-width="2" opacity="1.0"/><text x="1365.0" y="127.4" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.4" opacity="1.0">SOLANA · BETA SOON</text>
+<text x="96" y="372" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="90" font-weight="700" text-anchor="start" letter-spacing="-3" opacity="1.0">Real collectibles.</text>
+<text x="96" y="468" fill="#C2005D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="90" font-weight="700" text-anchor="start" letter-spacing="-3" opacity="1.0">On-chain proof.</text>
+<text x="96" y="528" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="25" font-weight="400" text-anchor="start" opacity="1.0">Escrow, seller bonds, Item NFTs and Trade Proof NFTs</text>
+<text x="96" y="564" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="25" font-weight="400" text-anchor="start" opacity="1.0">connect real-world ownership with on-chain records.</text>
+<g filter="url(#soft)"><rect x="96" y="636" width="312" height="148" rx="30" fill="#FFFFFF" stroke="#E9E4EB" stroke-width="2.5" opacity="1.0"/></g>
+<path d="M131 682 l5 6 10-13" fill="none" stroke="#C2005D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="124" y="726" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="16" font-weight="700" text-anchor="start" letter-spacing="3" opacity="1.0">ESCROW</text>
+<text x="124" y="754" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" opacity="1.0">Payment held until review.</text>
+<g filter="url(#soft)"><rect x="452" y="636" width="312" height="148" rx="30" fill="#FFFFFF" stroke="#E9E4EB" stroke-width="2.5" opacity="1.0"/></g>
+<path d="M487 682 l5 6 10-13" fill="none" stroke="#C2005D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="480" y="726" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="16" font-weight="700" text-anchor="start" letter-spacing="3" opacity="1.0">SELLER BONDS</text>
+<text x="480" y="754" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" opacity="1.0">Trades backed by staked TRF.</text>
+<g filter="url(#soft)"><rect x="808" y="636" width="312" height="148" rx="30" fill="#FFFFFF" stroke="#E9E4EB" stroke-width="2.5" opacity="1.0"/></g>
+<path d="M843 682 l5 6 10-13" fill="none" stroke="#C2005D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="836" y="726" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="16" font-weight="700" text-anchor="start" letter-spacing="3" opacity="1.0">ITEM NFT</text>
+<text x="836" y="754" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" opacity="1.0">A credential after destruction.</text>
+<g filter="url(#soft)"><rect x="1164" y="636" width="312" height="148" rx="30" fill="#FFFFFF" stroke="#E9E4EB" stroke-width="2.5" opacity="1.0"/></g>
+<path d="M1199 682 l5 6 10-13" fill="none" stroke="#C2005D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1192" y="726" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="16" font-weight="700" text-anchor="start" letter-spacing="3" opacity="1.0">TRADE PROOF</text>
+<text x="1192" y="754" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" opacity="1.0">A record for both sides.</text>
+<line x1="96" y1="840" x2="1504" y2="840" stroke="#E9E4EB" stroke-width="2"/><text x="96" y="876" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="14" font-weight="600" text-anchor="start" letter-spacing="3.2" opacity="1.0">VERIFIED COLLECTIBLE TRADES ON SOLANA</text><text x="1504" y="876" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="14" font-weight="600" text-anchor="end" letter-spacing="3.2" opacity="1.0">KEEPORA.xyz</text>
+<circle cx="1450" cy="700" r="190" fill="none" stroke="#F7D7E5" stroke-width="2.5" opacity="0.45"/>
+<circle cx="1540" cy="420" r="70" fill="none" stroke="#F7D7E5" stroke-width="2.5" opacity="0.4"/>
+</svg>

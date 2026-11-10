@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T17:13:17.460Z",
+  "generatedAt": "2026-11-09T18:32:18.553Z",
   "project": {
     "root": "E:/workspace/chuangye/solana/ppmt2s/website",
-    "name": "custoria-website",
+    "name": "keepora-website",
     "baseUrl": "http://127.0.0.1:4317/"
   },
   "passed": true,
@@ -20,32 +20,11 @@
       "passed": true,
       "issues": [],
       "warnings": [],
-      "hash": "5d336251dc521412913ddd8cec9b68b547eca5b86a742dd6c94bbe43e01ddd6a"
+      "hash": "0b7b75644502f72ae4783145ea3766f29048817c729d54884a2b1668f8af4079"
     },
     "skeleton": {
       "passed": true,
       "original": {
-        "id": "terminal-console",
-        "family": "linear",
-        "traits": {
-          "sidebar": false,
-          "topbar": false,
-          "cards": true,
-          "hero": false,
-          "table": true,
-          "grid": true,
-          "tabs": true,
-          "modal": true,
-          "charts": false,
-          "sticky": true,
-          "orbital": false,
-          "terminal": true,
-          "bento": false,
-          "ticker": false,
-          "gallery": false
-        }
-      },
-      "current": {
         "id": "sidebar-workspace",
         "family": "shell",
         "traits": {
@@ -66,10 +45,31 @@
           "gallery": false
         }
       },
+      "current": {
+        "id": "orbital",
+        "family": "spatial",
+        "traits": {
+          "sidebar": false,
+          "topbar": false,
+          "cards": true,
+          "hero": false,
+          "table": true,
+          "grid": true,
+          "tabs": true,
+          "modal": true,
+          "charts": false,
+          "sticky": true,
+          "orbital": true,
+          "terminal": false,
+          "bento": false,
+          "ticker": false,
+          "gallery": true
+        }
+      },
       "accent": {
-        "original": "#28a0f0",
-        "current": "#e6006f",
-        "deltaE": 99.85,
+        "original": "#e6006f",
+        "current": "#40b3ff",
+        "deltaE": 102.3,
         "min": 30
       }
     },
@@ -81,9 +81,9 @@
         "failures": [],
         "warnings": [],
         "structure": {
-          "fingerprintSimilarity": 0.422,
-          "landmarkSimilarity": 0.5,
-          "classOverlap": 0.057
+          "fingerprintSimilarity": 0.358,
+          "landmarkSimilarity": 0.222,
+          "classOverlap": 0.059
         },
         "content": {
           "missing": [],
@@ -118,7 +118,7 @@
   "failures": [],
   "warnings": [],
   "baseline": {
-    "generatedAt": "2026-10-21T16:49:05.252Z",
+    "generatedAt": "2026-11-09T18:05:44.992Z",
     "routes": [
       "/"
     ]

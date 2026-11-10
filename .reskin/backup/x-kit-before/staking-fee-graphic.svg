@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Keepora staking and fee-funded rewards</title>
+  <desc id="desc">A light Keepora staking infographic showing realized token buy and sell fees plus app fees flowing into a reward pool, then being distributed by the formula current reward pool times user weight divided by all valid weight. It lists 30, 90 and 180 day lock multipliers and Collector Pass and Genesis Pass multipliers, with a no fixed APY disclosure.</desc>
+  <defs>
+    <radialGradient id="glowA" cx="0.12" cy="0.02" r="0.72">
+      <stop offset="0" stop-color="#FFD7E8" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FFD7E8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.96" cy="0.98" r="0.72">
+      <stop offset="0" stop-color="#FFE9D6" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#FFE9D6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pinkGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF6FB5"/>
+      <stop offset="0.55" stop-color="#E6006F"/>
+      <stop offset="1" stop-color="#A80050"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF9CC6"/>
+      <stop offset="1" stop-color="#E6006F"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#140A19" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+  <rect width="1600" height="900" fill="url(#glowA)"/>
+  <rect width="1600" height="900" fill="url(#glowB)"/>
+<rect x="96" y="98" width="46" height="4" rx="2" fill="#E6006F"/><text x="156" y="108" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="17" font-weight="700" text-anchor="start" letter-spacing="4" opacity="1.0">KEEPORA / STAKING NOTE 003</text>
+<text x="96" y="200" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="62" font-weight="700" text-anchor="start" letter-spacing="-2" opacity="1.0">Rewards come from</text>
+<text x="96" y="268" fill="#C2005D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="62" font-weight="700" text-anchor="start" letter-spacing="-2" opacity="1.0">realized fees.</text>
+<text x="96" y="316" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="22" font-weight="400" text-anchor="start" opacity="1.0">Fees in. Weights out. No fixed APY, no promise.</text>
+<g filter="url(#soft)"><rect x="96" y="356" width="840" height="268" rx="36" fill="#FFFFFF" stroke="#E9E4EB" stroke-width="2.5" opacity="1.0"/></g>
+<text x="136" y="402" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="15" font-weight="600" text-anchor="start" letter-spacing="4" opacity="1.0">REWARD POOL</text>
+<text x="136" y="458" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="32" font-weight="700" text-anchor="start" letter-spacing="-1" opacity="1.0">Realized fees</text>
+<text x="136" y="492" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="19" font-weight="400" text-anchor="start" opacity="1.0">+ governance-approved budget</text>
+<rect x="136" y="532" width="340" height="42" rx="21.0" fill="#FFF5F9" stroke="#F7D7E5" stroke-width="2" opacity="1.0"/><text x="306.0" y="558.04" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1.4" opacity="1.0">FUNDED BY REALIZED FEES</text>
+<line x1="514" y1="386" x2="514" y2="594" stroke="#E9E4EB" stroke-width="2"/>
+<text x="552" y="402" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="15" font-weight="600" text-anchor="start" letter-spacing="4" opacity="1.0">DISTRIBUTION FORMULA</text>
+<text x="552" y="448" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="28" font-weight="700" text-anchor="start" letter-spacing="-0.8" opacity="1.0">pool × your weight</text>
+<line x1="552" y1="466" x2="896" y2="466" stroke="#0D0D0D" stroke-width="3"/>
+<text x="552" y="506" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="28" font-weight="700" text-anchor="start" letter-spacing="-0.8" opacity="1.0">all valid weight</text>
+<text x="552" y="556" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="18" font-weight="400" text-anchor="start" opacity="1.0">Weekly distribution, variable amount.</text>
+<text x="96" y="692" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="15" font-weight="600" text-anchor="start" letter-spacing="4" opacity="1.0">LOCK MULTIPLIERS</text>
+<g filter="url(#soft)"><rect x="96" y="712" width="196" height="100" rx="28" fill="#FFFFFF" stroke="#E9E4EB" stroke-width="2.5" opacity="1.0"/></g>
+<text x="120" y="752" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="15" font-weight="600" text-anchor="start" letter-spacing="2" opacity="1.0">30d</text>
+<text x="120" y="794" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="32" font-weight="700" text-anchor="start" letter-spacing="-1.4" opacity="1.0">1.00×</text>
+<g filter="url(#soft)"><rect x="312" y="712" width="196" height="100" rx="28" fill="#FFFFFF" stroke="#E9E4EB" stroke-width="2.5" opacity="1.0"/></g>
+<text x="336" y="752" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="15" font-weight="600" text-anchor="start" letter-spacing="2" opacity="1.0">90d</text>
+<text x="336" y="794" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="32" font-weight="700" text-anchor="start" letter-spacing="-1.4" opacity="1.0">1.25×</text>
+<g filter="url(#soft)"><rect x="528" y="712" width="196" height="100" rx="28" fill="#FFFFFF" stroke="#E9E4EB" stroke-width="2.5" opacity="1.0"/></g>
+<text x="552" y="752" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="15" font-weight="600" text-anchor="start" letter-spacing="2" opacity="1.0">180d</text>
+<text x="552" y="794" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="32" font-weight="700" text-anchor="start" letter-spacing="-1.4" opacity="1.0">1.60×</text>
+<g filter="url(#soft)"><rect x="976" y="356" width="528" height="268" rx="36" fill="#FFFFFF" stroke="#E9E4EB" stroke-width="2.5" opacity="1.0"/></g>
+<text x="1016" y="402" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="15" font-weight="600" text-anchor="start" letter-spacing="4" opacity="1.0">MEMBERSHIP MULTIPLIER</text>
+<text x="1016" y="452" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="-0.6" opacity="1.0">Collector Pass</text>
+<text x="1464" y="452" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="23" font-weight="700" text-anchor="end" opacity="1.0">1.10×</text>
+<line x1="1016" y1="472" x2="1464" y2="472" stroke="#E9E4EB" stroke-width="2"/>
+<text x="1016" y="510" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="-0.6" opacity="1.0">Genesis Pass</text>
+<text x="1464" y="510" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="23" font-weight="700" text-anchor="end" opacity="1.0">1.25×</text>
+<line x1="1016" y1="530" x2="1464" y2="530" stroke="#E9E4EB" stroke-width="2"/>
+<text x="1016" y="572" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="18" font-weight="400" text-anchor="start" opacity="1.0">Membership adds weight, not a fixed return.</text>
+<circle cx="1022" cy="598" r="7" fill="#E6006F"/>
+<text x="1040" y="604" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="18" font-weight="400" text-anchor="start" opacity="1.0">Draft parameters may change.</text>
+<g filter="url(#soft)"><rect x="976" y="652" width="528" height="148" rx="32" fill="#FFFBE8" stroke="#F2E2B8" stroke-width="2.5" opacity="1.0"/></g>
+<text x="1016" y="696" fill="#8A5A00" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="15" font-weight="700" text-anchor="start" letter-spacing="3.4" opacity="1.0">NO FIXED APY</text>
+<text x="1016" y="738" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="21" font-weight="600" text-anchor="start" opacity="1.0">Rewards depend on realized</text>
+<text x="1016" y="766" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="21" font-weight="600" text-anchor="start" opacity="1.0">revenue and the approved budget.</text>
+<line x1="96" y1="840" x2="1504" y2="840" stroke="#E9E4EB" stroke-width="2"/><text x="96" y="876" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="14" font-weight="600" text-anchor="start" letter-spacing="3.2" opacity="1.0">30 / 90 / 180 DAY LOCKS / COLLECTOR 1.10× / GENESIS 1.25×</text><text x="1504" y="876" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="14" font-weight="600" text-anchor="end" letter-spacing="3.2" opacity="1.0">DRAFT PARAMETERS</text>
+<circle cx="1520" cy="150" r="100" fill="none" stroke="#F7D7E5" stroke-width="2.5" opacity="0.5"/>
+</svg>

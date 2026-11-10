@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Keepora tokenomics note</title>
+  <desc id="desc">A light Keepora tokenomics infographic: 1,000,000,000 TRF, a Pump fair launch, dev holdings routed to a black-hole address, and two operating revenue rails, token buy and sell fees plus application fees.</desc>
+  <defs>
+    <radialGradient id="glowA" cx="0.12" cy="0.02" r="0.72">
+      <stop offset="0" stop-color="#FFD7E8" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FFD7E8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.96" cy="0.98" r="0.72">
+      <stop offset="0" stop-color="#FFE9D6" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#FFE9D6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pinkGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF6FB5"/>
+      <stop offset="0.55" stop-color="#E6006F"/>
+      <stop offset="1" stop-color="#A80050"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF9CC6"/>
+      <stop offset="1" stop-color="#E6006F"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#140A19" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+  <rect width="1600" height="900" fill="url(#glowA)"/>
+  <rect width="1600" height="900" fill="url(#glowB)"/>
+<rect x="96" y="98" width="46" height="4" rx="2" fill="#E6006F"/><text x="156" y="108" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="17" font-weight="700" text-anchor="start" letter-spacing="4" opacity="1.0">KEEPORA / TOKENOMICS NOTE 001</text>
+<text x="96" y="206" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="68" font-weight="700" text-anchor="start" letter-spacing="-2.2" opacity="1.0">Fair launch.</text>
+<text x="96" y="280" fill="#C2005D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="68" font-weight="700" text-anchor="start" letter-spacing="-2.2" opacity="1.0">Clear rails.</text>
+<text x="96" y="328" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="23" font-weight="400" text-anchor="start" opacity="1.0">$TRF has one fixed supply and two operating fee sources.</text>
+<g filter="url(#soft)"><rect x="96" y="356" width="640" height="360" rx="36" fill="#FFFFFF" stroke="#E9E4EB" stroke-width="2.5" opacity="1.0"/></g>
+<text x="136" y="406" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="17" font-weight="600" text-anchor="start" letter-spacing="4" opacity="1.0">TOTAL SUPPLY</text>
+<text x="136" y="492" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="70" font-weight="700" text-anchor="start" letter-spacing="-2.2" opacity="1.0">1,000,000,000</text>
+<text x="136" y="528" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="19" font-weight="700" text-anchor="start" letter-spacing="4" opacity="1.0">TRF</text>
+<rect x="136" y="552" width="330" height="10" rx="5" fill="#E9E4EB"/>
+<rect x="136" y="552" width="250" height="10" rx="5" fill="url(#barGrad)"/>
+<rect x="136" y="580" width="250" height="38" rx="19.0" fill="#FFF5F9" stroke="#F7D7E5" stroke-width="2" opacity="1.0"/><text x="261.0" y="604.04" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1.4" opacity="1.0">PUMP FAIR LAUNCH</text>
+<text x="136" y="648" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="19" font-weight="400" text-anchor="start" opacity="1.0">Same public launch rules for every buyer.</text>
+<line x1="136" y1="668" x2="696" y2="668" stroke="#E9E4EB" stroke-width="2"/>
+<text x="136" y="700" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="15" font-weight="700" text-anchor="start" letter-spacing="2.4" opacity="1.0">DEV HOLDINGS → BLACK HOLE</text>
+<g filter="url(#soft)"><rect x="776" y="356" width="728" height="150" rx="32" fill="#FFFFFF" stroke="#E9E4EB" stroke-width="2.5" opacity="1.0"/></g>
+<circle cx="852" cy="431" r="33" fill="#FFF5F9" stroke="#F7D7E5" stroke-width="2"/>
+<path d="M837 431h30M852 416v30" stroke="#E6006F" stroke-width="3.4" stroke-linecap="round"/>
+<text x="910" y="412" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="15" font-weight="700" text-anchor="start" letter-spacing="4" opacity="1.0">RAIL 01</text>
+<text x="910" y="450" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="31" font-weight="700" text-anchor="start" letter-spacing="-0.8" opacity="1.0">Token buy / sell fees</text>
+<text x="910" y="480" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="18" font-weight="400" text-anchor="start" opacity="1.0">Realized trading fees from the token.</text>
+<g filter="url(#soft)"><rect x="776" y="536" width="728" height="150" rx="32" fill="#FFFFFF" stroke="#E9E4EB" stroke-width="2.5" opacity="1.0"/></g>
+<circle cx="852" cy="611" r="33" fill="#FFF5F9" stroke="#F7D7E5" stroke-width="2"/>
+<path d="M837 611h30M852 596v30" stroke="#E6006F" stroke-width="3.4" stroke-linecap="round"/>
+<text x="910" y="592" fill="#C2005D" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="15" font-weight="700" text-anchor="start" letter-spacing="4" opacity="1.0">RAIL 02</text>
+<text x="910" y="630" fill="#0D0D0D" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="31" font-weight="700" text-anchor="start" letter-spacing="-0.8" opacity="1.0">Application fees</text>
+<text x="910" y="660" fill="#6D6A70" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="18" font-weight="400" text-anchor="start" opacity="1.0">Fees from marketplace activity.</text>
+<rect x="96" y="742" width="1408" height="62" rx="31" fill="#0D0D0D" stroke="#0D0D0D" stroke-width="0" opacity="1.0"/>
+<text x="136" y="782" fill="#FF9CC6" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="15" font-weight="700" text-anchor="start" letter-spacing="3.6" opacity="1.0">FUNDING PRINCIPLE</text>
+<text x="420" y="784" fill="#FFFFFF" font-family="Avenir Next,Segoe UI,Arial,Helvetica,sans-serif" font-size="24" font-weight="600" text-anchor="start" opacity="1.0">Operations and rewards use realized fees only.</text>
+<circle cx="1490" cy="90" r="120" fill="none" stroke="#F7D7E5" stroke-width="2.5" opacity="0.5"/>
+<circle cx="1410" cy="210" r="54" fill="none" stroke="#F7D7E5" stroke-width="2.5" opacity="0.45"/>
+<line x1="96" y1="840" x2="1504" y2="840" stroke="#E9E4EB" stroke-width="2"/><text x="96" y="876" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="14" font-weight="600" text-anchor="start" letter-spacing="3.2" opacity="1.0">FIXED SUPPLY / PUBLIC FAIR LAUNCH / DEV HOLDINGS BURNED</text><text x="1504" y="876" fill="#6D6A70" font-family="Cascadia Mono,Consolas,SFMono-Regular,monospace" font-size="14" font-weight="600" text-anchor="end" letter-spacing="3.2" opacity="1.0">NO PRICE OR RETURN PROMISE</text>
+</svg>
